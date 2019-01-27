@@ -1,0 +1,37 @@
+
+/*------ Header ------*/
+.header {
+  height: 600px;
+
+  .container {
+    padding-top: 100px;
+  }
+}
+
+.header-img {
+  margin-top: -90px;
+}
+
+.header-body-main {
+  font-size: 60px;
+  font-family: $secondary-font
+}
+
+@media(max-width: map-get($grid-breakpoints, md)) {
+  .header {
+    height: 700px;
+
+    .container {
+      padding-top: 50px;
+    }
+  }
+  .header-body-main {
+    font-size: 40px;
+  }
+
+  .header-img {
+    margin-top: 0px;
+  }
+}
+
+

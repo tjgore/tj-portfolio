@@ -1,0 +1,36 @@
+.bg-review {
+  background-image: linear-gradient(45deg, $theme-main-color, $theme-cyan-color);
+}
+
+.review-container {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.review-img-container {
+  position: relative;
+  left: 40%;
+  margin-top: -60px;
+  padding-bottom: 16px;
+  padding-top: 20px;
+}
+
+.review-body {
+  padding: 40px 40px 70px 40px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.review-img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.reviewer {
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+enable: true
+reviewItems:
+  - person: Sara Peters
+    position: Senior Manager
+    image: /images/person1.jpg
+    review: There are those who believe that life here began out there... far across the universe, with tribes of humans
+
+  - person: Johnathan Matthews
+    position: Sales Manager
+    image: /images/person2.jpg
+    review: There are those who believe that life here began out there... far across the universe, with tribes of humans
+
+  - person: Becky Jones
+    position: CEO
+    image: /images/person1.jpg
+    review: There are those who believe that life here began out there... far across the universe, with tribes of humans

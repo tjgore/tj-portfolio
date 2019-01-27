@@ -1,0 +1,41 @@
+baseURL = "https://tjwgore.com"
+languageCode = "en-us"
+title = "TJ Gore Portfolio"
+disableKinds = ["taxonomy", "taxonomyTerm", "categories"]
+
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[[menu.main]]
+  name = "About"
+  url = "/#about"
+    weight = 1
+
+[[menu.main]]
+    name = "Work"
+    url = "/#work"
+    weight = 2
+
+[[menu.main]]
+    name = "Contact"
+    url = "/#contact"
+    weight = 3
+
+[params]
+  themeColor = "#31CB00" 
+  favicon = "/favicon.ico"
+  description = "Welcome to TJ Gore's Portfolio. Take a look and see how I can add value for you or your team!"
+  email = "hello@tjwgore.com"
+  mobile = "(+86) 187-8884-6457"
+  address = "Brooklyn Park, Baltimore, MN USA"
+  facebook = ""
+  twitter = "https://twitter.com/TJGore3"
+  instagram = ""
+  github = "https://github.com/tjgore"
+  gitlab = ""
+  linkedin = "https://www.linkedin.com/in/tyndale-gore-jr-bb11b065"

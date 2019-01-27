@@ -1,0 +1,103 @@
+enable: true
+workItems:
+  - name: APSCA Custom CMS and Event management backend
+    type: "client"
+    image: /images/apsca-admin.png
+    alt: apsca-admin
+    description: Redesigned the website, restructured the database, refactored the code and simplified the server setup to reduce server cost. 
+    maintain: true
+    tech:
+      - Laravel
+      - Javascript
+      - LAMP
+    URL: https://apsca.org
+
+  - name: ID4Africa Registration System
+    type: "client"
+    image: /images/registration.png
+    alt: id4africa-registration
+    description: Custom registration system built to get over the limitations offered by online solutions.
+    maintain: true
+    tech:
+      - Laravel
+      - Javascript
+      - LAMP
+    URL: http://id4africa.com
+
+  - name: Barry Taxi
+    type: "client"
+    image: /images/barry.jpg
+    alt: barry-website
+    description: "Tremendously boosted the online presence for a small local business which attracted international clients and topped the number #1 position on tripadvisor."
+    maintain: false
+    tech:
+      - PHP
+      - Mysql
+      - Javascript
+      - LAMP
+    URL: http://barrytaxi.com
+
+  - name: Cari-Sino Consulting
+    type: "client"
+    image: /images/cari.png
+    alt: cari-sino
+    description: 
+    maintain: false
+    tech:
+      - PHP
+      - LAMP
+    URL: http://www.cari-sinoconsulting.com/
+
+  - name: Avi Term Life
+    type: "client"
+    image: /images/avi-term-life.png
+    alt: avi-term-life
+    description: 
+    maintain: false
+    tech:
+      - PHP
+      - LAMP
+    URL: http://avitermlife.com/
+
+  - name: Move and Groove
+    type: "my"
+    image: /images/fitness2.png
+    alt: fitness-project 
+    tech:
+      - Ruby on Rails
+      - Heroku
+    URL: https://fitness-groove2.herokuapp.com
+    github: https://github.com/tjgore/move-and-groove
+
+  - name: Andio
+    type: "my"
+    image: /images/andio2.png
+    alt: andio-project 
+    tech:
+      - Reactjs
+      - Rails API
+      - Google map API
+      - Heroku
+    URL: https://andio-react.surge.sh
+    github: https://github.com/tjgore/andio-react
+
+  - name: Burger Builder
+    type: "my"
+    image: /images/bb.png
+    alt: burger-project 
+    tech:
+      - Reactjs
+      - Firebase
+    URL: https://reactburger268.surge.sh/
+    github: https://github.com/tjgore/burger-builder-react
+
+  - name: Bike Tour
+    type: "my"
+    image: /images/biketour2.png
+    alt: bike-tour
+    tech:
+      - Reactjs
+      - Rails API
+      - Google map API
+    URL: https://biketour.surge.sh/
+    github: https://github.com/tjgore/bike-tour-react

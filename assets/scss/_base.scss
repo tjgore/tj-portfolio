@@ -1,0 +1,33 @@
+/*--- Fonts ---*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,600,800|Montserrat:300,400,500,700,600,800");
+
+/*------ Base ------*/
+body {
+  background: $body-color;
+  color: $body-text-color;
+  font-size: $body-text-size;
+  font-family: $main-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $secondary-font;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.5;
+}
+
+a {
+  color: $theme-main-color;
+  transition: 0.3s;
+
+  &:hover, &:active, &:focus {
+    color: darken($theme-main-color, 15%);
+  }
+}
+
+img {
+  max-width: 100%;
+}

@@ -1,0 +1,73 @@
+/*------ Headers ------*/
+@mixin header ($color, $center: false) {
+  color: $color;
+  font-weight: bold;
+  font-family: $secondary-font;
+  padding-top: 60px;
+  @if $center {
+    text-align: center;
+  }
+
+   &::after {
+      background-color: $color;
+      content: "";
+      @if $center {
+        margin: auto;
+      }
+      height: 2px;
+      width: 20%;
+      margin-top: 14px;
+      display: block;
+   }
+}
+
+.secondary-section-header {
+  @include header($theme-secondary-color);
+}
+
+.primary-section-header-center {
+  @include header($theme-main-color, true);
+}
+
+.white-section-header-center {
+  @include header(white, true);
+}
+
+.black-section-header-center {
+  @include header($gray-600, true);
+}
+
+
+/*------ Utilities ------*/
+.content-spacing p {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.gray-600 {
+  color: $gray-600;
+}
+
+.cyan-color {
+  color: $theme-cyan-color;
+}
+
+.primary-color {
+  color: $theme-main-color;
+}
+
+.bg-work {
+  background-color: #f2f2f2;
+}
+
+.twitter {
+  color: $twitter;
+}
+
+.linkedn {
+  color: $linkedn;
+}
+
+.github {
+  color: $gray-700;
+}
