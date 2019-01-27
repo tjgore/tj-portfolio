@@ -29,6 +29,8 @@ function bootstrapSass() {
   .pipe(gulp.dest('static/css/'))
 }
 
+gulp.task('build', gulp.parallel(bootstrapSass, cssToSass))
+
 gulp.task('watch', function() {
   gulp.watch('assets/scss/**/*.scss', gulp.series(gulp.parallel(bootstrapSass, cssToSass)))
 })
