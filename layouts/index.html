@@ -331,20 +331,20 @@
         </ul>
       </div>
       <div class="col-md-6 col-12">
-        <form>
+        <form name="contact" method="POST" data-netlify="true">
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control-2" placeholder="your name">
+              <input type="text" name="fullname" class="form-control-2" placeholder="your name">
             </div>
             <div class="col">
-              <input type="text" class="form-control-2" placeholder="email address">
+              <input type="text" name="email" class="form-control-2" placeholder="email address">
             </div>
           </div>
           <div class="form-group pt-4">
-            <input type="text" class="form-control-2" placeholder="subject">
+            <input type="text" name="subject" class="form-control-2" placeholder="subject">
           </div>
           <div class="form-group pt-3">
-            <textarea class="form-control-2" id="exampleFormControlTextarea1" placeholder="message" rows="3"></textarea>
+            <textarea class="form-control-2" name="message" id="exampleFormControlTextarea1" placeholder="message" rows="3"></textarea>
           </div>
           <div class="col-12 p-0 pt-3">
             <input type="submit" name="submit" class="btn btn-theme-primary btn-lg font-weight-bold rounded-0">
@@ -408,6 +408,10 @@
   })
   $("#back-to-top").click( function () {
     $("html,body").animate({ scrollTop: 0 }, "fast")
+  })
+
+  $(".mobile-navbar a").click( function() {
+    $(".mobile-navbar").removeClass("show")
   })
 </script>
 {{ end }}
