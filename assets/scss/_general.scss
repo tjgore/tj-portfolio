@@ -8,17 +8,17 @@
     text-align: center;
   }
 
-   &::after {
-      background-color: $color;
-      content: "";
-      @if $center {
-        margin: auto;
-      }
-      height: 2px;
-      width: 20%;
-      margin-top: 14px;
-      display: block;
-   }
+  &::after {
+    background-color: $color;
+    content: "";
+    @if $center {
+      margin: auto;
+    }
+    height: 2px;
+    width: 20%;
+    margin-top: 14px;
+    display: block;
+  }
 }
 
 .secondary-section-header {
@@ -42,6 +42,13 @@
 .content-spacing p {
   padding-bottom: 20px;
   font-size: 20px;
+}
+
+@media(max-width: map-get($grid-breakpoints, sm)) {
+  .content-spacing p {
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
 }
 
 .gray-600 {
