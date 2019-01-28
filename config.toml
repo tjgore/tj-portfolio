@@ -1,6 +1,6 @@
 baseURL = "https://tjwgore.com"
 languageCode = "en-us"
-title = "TJ Gore Portfolio"
+title = "TJ Gore's Portfolio"
 disableKinds = ["taxonomy", "taxonomyTerm", "categories"]
 
 googleAnalytics = ""

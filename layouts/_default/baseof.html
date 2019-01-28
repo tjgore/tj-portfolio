@@ -6,18 +6,18 @@
   <meta content="en_US" property="og:locale">
   <meta name="description" content="{{ $.Site.Params.description }}"/>
   <meta name="keywords" content="portfolio, web developer, full stack developer, design, html templates, web apps"/>
-  <meta content="{{ .Title }}" property="og:site_name">
-  <meta content="{{ .Title }}" property="og:title">
-  <meta content="{{ .Site.BaseURL }}/images/update.svg" property="og:image">
+  <meta content="{{ $.Site.Title }}" property="og:site_name">
+  <meta content="{{ $.Site.Title }}" property="og:title">
+  <meta content="{{ $.Site.BaseURL }}/images/update.svg" property="og:image">
   <meta content="{{ $.Site.Params.description }}" name="og:description">
   <meta content="{{ $.Site.Params.email }}" property="og:email">
   <meta content="website" property="og:type">
-  <meta content="{{ .Site.BaseURL }}" property="og:url">
+  <meta content="{{ $.Site.BaseURL }}" property="og:url">
   <meta name="theme-color" content="{{ $.Site.Params.themeColor }}">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
   <link rel="shortcut icon" type="image/x-icon" href="{{ $.Site.Params.favicon }}">
   <!-- <link href="/manifest.json" rel="manifest"> -->
-  <title>{{ .Title }}</title>
+  <title>{{ $.Site.Title }}</title>
 
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
