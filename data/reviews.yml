@@ -1,14 +1,14 @@
 enable: true
 reviewItems:
-  - person: Sara Peters
-    position: Senior Manager
-    image: /images/person1.jpg
-    review: There are those who believe that life here began out there... far across the universe, with tribes of humans
+  - person: Greg Pote
+    position: Chairman of APSCA
+    image: /images/greg.jpg
+    review: TJ redesigned and rebuilt our website and backend to make it more intuitive and mobile friendly. He did a great job from both a UX and security perspective and we continue to trust him for further development and maintainance. 
 
-  - person: Johnathan Matthews
-    position: Sales Manager
-    image: /images/person2.jpg
-    review: There are those who believe that life here began out there... far across the universe, with tribes of humans
+  - person: Barry Oliver
+    position: CEO of Barry Taxi and Tours
+    image: /images/barry-himself.jpg
+    review: Working with TJ has been a great experience! He designed and built a website for my taxi and tour business which has since emerged my business as a top five operator in Antigua on TripAdvisor. He's professional and knowledgeable about getting your business out there. 
 
   - person: Becky Jones
     position: CEO
