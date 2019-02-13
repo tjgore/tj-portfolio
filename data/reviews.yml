@@ -1,16 +1,25 @@
 enable: true
 reviewItems:
+  - person: Thomas David
+    position: Mentor at Openclassrooms
+    image: /images/thomas.jpg
+    alt: Thomas
+    review: TJ was one of my top students at OpenClassrooms who I can't recommend enough. He is a hard worker who pays close attention to detail and has the ability to solve complex problems by thinking outside the box.
+
   - person: Greg Pote
     position: Chairman of APSCA
     image: /images/greg.jpg
+    alt: Greg
     review: TJ redesigned and rebuilt our website and backend to make it more intuitive and mobile friendly. He did a great job from both a UX and security perspective and we continue to trust him for further development and maintainance. 
 
   - person: Barry Oliver
     position: CEO of Barry Taxi and Tours
     image: /images/barry-himself.jpg
+    alt: Barry
     review: Working with TJ has been a great experience! He designed and built a website for my taxi and tour business which has since emerged my business as a top five operator in Antigua on TripAdvisor. He's professional and knowledgeable about getting your business out there. 
 
   - person: Shauna Taylor
     position: Marcom Manager at ID4Africa
     image: /images/shauna.jpeg
+    alt: Shauna
     review: TJ is one of the very few people I personally know who's made his passion define his profession - a truly powerful combination with unimaginable outcomes! He checks all the boxes when it comes to stellar client services matched with integrity and all heart. 
