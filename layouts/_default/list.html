@@ -1,3 +1,23 @@
 {{ define "main" }}
-List Page 2
-{{ end }}
+<section class="bg-img" style="background-image: url('./../images/world.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 header-body text-light py-5 text-center">
+        <h1 class="header-title">Learning, Creating, and Sharing!</h1>
+        <h4 class="header-subtitle">Be awesome <br/>and learn something new today.</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="articles">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center pt-5 mt-4 pb-4">
+        <h1>Recent Articles</h1>
+      </div>
+    </div>
+    {{- partial "articles/articleList" . -}}
+  </div>
+</section>
+{{end}}

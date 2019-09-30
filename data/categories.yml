@@ -1,0 +1,12 @@
+enabled: false
+categories:
+  - Javascript
+  #- PHP
+ # - React
+  - Laravel
+ # - Nodejs
+ # - HTML
+ # - CSS
+ # - Git
+  #- General
+  #- DevOps

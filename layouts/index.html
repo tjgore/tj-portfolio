@@ -364,60 +364,45 @@
 
 {{ define "scripts" }}
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.review-slick').slick({
-      arrows: false,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      pauseOnFocus: false,
-      pauseOnHover: false,
-      centerMode: true,
-      centerPadding: '60px',
-      responsive: [
-      {
-        breakpoint: 990,
-        settings: {
-          slidesToShow: 2,
-          centerMode: true,
-          centerPadding: '40px',
+<script>
+    $(document).ready(function(){
+      $('.review-slick').slick({
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        centerMode: true,
+        centerPadding: '60px',
+        responsive: [
+        {
+          breakpoint: 990,
+          settings: {
+            slidesToShow: 2,
+            centerMode: true,
+            centerPadding: '40px',
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            centerMode: true,
+            centerPadding: '40px',
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
         }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-          centerPadding: '40px',
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-      ]
+        ]
+      });
     });
-  });
-
-  $(document).scroll(function () {
-    if($(document).scrollTop() >= 800) {
-      $("#back-to-top").css({ opacity: 0.7 })
-    } else {
-      $("#back-to-top").css({ opacity: 0 })
-    }
-  })
-  $("#back-to-top").click( function () {
-    $("html,body").animate({ scrollTop: 0 }, "fast")
-  })
-
-  $(".mobile-navbar .navbar-nav a").click( function() {
-    $(".mobile-navbar").removeClass("show")
-  })
 </script>
 {{ end }}

@@ -1,2 +1,12 @@
-Single page
-{{ .Content }}
+{{ define "main" }}
+<main class="single-article">
+  <div class="container">
+    <div class="row">
+      {{- partial "articles/header" . -}}
+      <div class="col-12 col-md-8 offset-md-2 py-5 article-body">
+        {{.Content}}
+      </div>
+    </div>
+  </div>
+</main>
+{{end}}

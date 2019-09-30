@@ -24,6 +24,7 @@ a {
   transition: 0.3s;
 
   &:hover, &:active, &:focus {
+    text-decoration: none;
     color: darken($theme-main-color, 15%);
   }
 }

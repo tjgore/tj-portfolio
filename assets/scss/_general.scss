@@ -51,6 +51,12 @@
   }
 }
 
+.gray-800 {
+  color: $gray-800;
+}
+.gray-700 {
+  color: $gray-700;
+}
 .gray-600 {
   color: $gray-600;
 }
@@ -77,4 +83,47 @@
 
 .github {
   color: $gray-700;
+}
+
+// Background
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+.bg-main-color {
+  background-color: $theme-main-color;
+}
+.bg-secondary-color {
+  background-color: $theme-secondary-color;
+}
+.bg-orange-color {
+  background-color: $theme-orange-color;
+}
+.bg-red-color {
+  background-color: $theme-red-color;
+}
+.bg-dark-color {
+  background-color: $theme-dark-color;
+}
+.bg-primary-gradient {
+  background: rgb(18,179,168);
+background: linear-gradient(90deg, rgba(18,179,168,1) 35%, rgba(18,179,103,1) 82%);
+}
+.bg-secondary-gradient {
+  background: rgb(1,111,185);
+background: linear-gradient(90deg, rgba(1,111,185,1) 35%, rgba(1,53,185,1) 82%);
+}
+.bg-red-gradient {
+  background: rgb(215,38,56);
+background: linear-gradient(90deg, rgba(215,38,56,1) 35%, rgba(215,81,38,1) 82%);
+}
+.bg-dark-gradient {
+  background: rgb(20,15,45);
+background: linear-gradient(90deg, rgba(20,15,45,1) 35%, rgba(42,15,45,1) 82%);
+}
+.bg-orange-gradient {
+  background: rgb(244,157,55);
+background: linear-gradient(90deg, rgba(244,157,55,1) 35%, rgba(244,110,55,1) 82%);
 }

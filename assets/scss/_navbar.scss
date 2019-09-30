@@ -1,4 +1,8 @@
 /*------ Navbar ------*/
+.navbar {
+  border-bottom: 1px solid $gray-300;
+}
+
 .custom-navbar-brand {
   font-weight: 600;
   font-family: Montserrat;
@@ -34,7 +38,6 @@
   .navbar-nav { 
     .nav-link { 
       color: white;
-      font-weight: 600;
       text-align: center;
       padding: 15px 0px;
       font-size: 16px;

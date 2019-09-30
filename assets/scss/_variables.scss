@@ -2,8 +2,12 @@ $theme-main-color: #31CB00;
 $theme-secondary-color: #F21B3F;
 $theme-cyan-color: #08BDBD;
 $theme-orange-color: #FF9914;
+$theme-red-color: #D72638;
+$theme-dark-color: #140F2D;
+
 
 // Grays
+$light: white;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
@@ -13,6 +17,18 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
+$dark: black;
+
+// category colors
+$javascript: #f0db4f;
+$php: #4d588e;
+$nodejs: #87bf00;
+$react: #5ed3f3;
+$git: #EA4D28;
+$laravel: #F34E39;
+$html: $theme-secondary-color;
+$css: $theme-dark-color;
+$general: $theme-red-color;
 
 // Social colors
 $twitter: #1DA1F2;
@@ -26,3 +42,13 @@ $secondary-font: "Montserrat", sans-serif;
 
 $nav-links-color: rgba(89,85,85, 1);
 $nav-hover-links: rgba(89,85,85, 0.7);
+
+// custom bootstrap
+$theme-colors: (
+    primary: $theme-main-color,
+    theme-secondary: $theme-secondary-color,
+    orange: $theme-orange-color,
+    cyan: $theme-cyan-color,
+    red: $theme-red-color,
+    darky: $theme-dark-color,
+);

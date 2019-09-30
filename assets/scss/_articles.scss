@@ -1,0 +1,252 @@
+.articles {
+  background-color: #fafbfc;
+  padding-bottom: 100px;
+}
+
+.card {
+  position: relative;
+  margin: 20px 0px 20px 0px;
+  box-shadow: rgba(25, 17, 34, 0.5) 0px 5px 10px;
+}
+
+.highlight {
+  padding-top: 20px;
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) {
+  .card {
+    flex: 1;
+    margin: 20px;
+    box-shadow: rgba(25, 17, 34, 0.5) 0px 5px 10px;
+    transition: all 0.3s;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:hover {
+      //transform: scale(1.03,1.03);
+      box-shadow: rgba(25, 17, 34, 0.6) 0px 10px 20px;
+    }
+  }
+}
+
+.article-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7)
+}
+
+.card-inner {
+  color: white;
+  padding: 15px 20px 15px 20px;
+}
+
+.bg-card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.category {
+  font-size: 18px;
+  border-radius: 0px;
+  padding: 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  transition: all 0.3s;
+
+}
+
+// category mixin
+@mixin category-color($bg-color, $text-color: $light) {
+  background-color: $bg-color;
+  color: $text-color;
+  &:hover {
+    color: $text-color;
+  }
+}
+
+.category-javascript {
+  @include category-color($javascript, $gray-800)
+}
+
+.category-react {
+  @include category-color($gray-800, $react)
+}
+
+.category-nodejs {
+  @include category-color($nodejs)
+}
+
+.category-git {
+  @include category-color($git)
+}
+
+.category-laravel {
+  @include category-color($laravel)
+}
+
+.category-php {
+  @include category-color($php)
+}
+
+.category-html {
+  @include category-color($html)
+}
+
+.category-css {
+  @include category-color($css)
+}
+
+.category-devops {
+  @include category-color($theme-secondary-color)
+}
+
+.category-general {
+  @include category-color($general)
+}
+
+// Single article
+.article-title {
+  font-size: 60px;
+}
+
+.author {
+    color: $theme-secondary-color;
+
+  }
+
+@media (max-width: map-get($grid-breakpoints, md)) {
+  .article-title {
+    font-size: 40px; 
+  }
+}
+
+.article-body {
+  p {
+    line-height: 1.75;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+
+  h2 {
+    color: $gray-800;
+    margin-top: 50px;
+    display: block;
+    font-weight:700;
+    &:hover {
+      color: $theme-main-color;
+    }
+  }
+
+  h3, h4, h5 {
+    margin-top: 40px;
+  }
+
+  img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .notice {
+    background: $gray-400;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  pre {
+    padding: 15px;
+  }
+
+  ul {
+    padding-top: 15px;
+    font-size: 18px;
+
+    li {
+      padding-bottom: 10px;
+    }
+  }
+
+  .note {
+    margin-top: 35px;
+    border-left: 7px solid $theme-secondary-color;
+    background-color: $gray-200;
+    padding: 25px;
+    border-radius: 5%;
+
+    h5 {
+      margin-top: 0px;
+    }
+  }
+}
+
+// table of content
+.table-of-content {
+  border: 0px solid #cecece;
+  padding: 0px 15px 5px 0px;
+  border-radius: 5px;
+
+  .toc-header {
+    padding-bottom:5px;
+    border-bottom: 1px solid #cecece;
+    margin-top: 15px;
+  }
+
+  .toc-header, .toc-hash {
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .toc-hash {
+    color: $theme-main-color;
+  }
+
+  .toc-link {
+    text-decoration: none !important;
+    border-bottom: 0px;
+    color: $gray-600;
+    
+    &:hover {
+      color: $gray-800;
+    }
+  }
+
+  .column-1 {
+    column-count: 1
+  }
+
+  .column-2 {
+    column-count: 2;
+  }
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    .column-2 {
+      column-count: 1 
+    }
+  }
+
+  .toc-list {
+    padding-left: 10px;
+    column-gap: 1em;
+    list-style-type: none;
+
+    li {
+      font-weight: 300;
+      padding-bottom: 5px;
+    }
+  }
+}
