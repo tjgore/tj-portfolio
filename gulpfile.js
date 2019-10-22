@@ -33,7 +33,7 @@ function bootstrapSass() {
 }
 
 gulp.task('purgecss', () => {
-  return gulp.src('public/css/*.css')
+  return gulp.src('public/css/bootstrap.css')
       .pipe(purgecss({
           content: [...publicHtml]
       }))
