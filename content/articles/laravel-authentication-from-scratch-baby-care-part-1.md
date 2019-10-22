@@ -6,10 +6,10 @@ author: "TJ Gore"
 authorLink: "https://tjwgore.com"
 mainImage: ""
 haveImage: false
-color: "bg-red-gradient"
+color: "bg-dark-gradient"
 categories: ["Laravel"]
 keywords: ["Laravel authentication from scratch"]
-draft: false
+draft: true
 ---
 
 ## Intro 

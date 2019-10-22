@@ -1,3 +1,15 @@
+{{ define "meta-data" }}
+<meta name="description" content="{{ $.Site.Params.description }}"/>
+  <meta name="keywords" content="portfolio, web developer, full stack developer"/>
+  <meta content="{{ $.Site.Title }}" property="og:site_name">
+  <meta content="{{ $.Site.Title }}" property="og:title">
+  <meta content="{{ $.Site.BaseURL }}/images/update.svg" property="og:image">
+  <meta content="{{ $.Site.Params.description }}" name="og:description">
+  <meta content="website" property="og:type">
+  <meta content="{{ $.Site.BaseURL }}" property="og:url">
+  <title>{{ $.Site.Title }}</title>
+{{ end }}
+
 {{ define "main" }}
 <section class="header">
   <div class="container">
