@@ -1,7 +1,7 @@
 ---
 title: "A Data Fetching Nextjs Site Built with Tailwind"
 date: 2019-10-21
-description: "Building a simple nextjs book store site"
+description: "Build a simple nextjs book store site"
 author: "TJ Gore"
 authorLink: "https://tjwgore.com"
 mainImage: ""
@@ -25,7 +25,7 @@ We will go through how to
 - set up .env file
 - deploy to now
 
-You can find the completed project [freshly](https://github.com/tjgore/freshly/tree/master)
+You can find the completed project [here](https://github.com/tjgore/freshly/tree/master)
 
 ## Getting started
 

@@ -1,15 +1,15 @@
 ---
 title: "Dynamic Pages with Clean Urls in Nextjs"
 date: 2019-10-22
-description: "Building a simple nextjs book store site"
+description: "Let's build dynamic pages with clean urls in nextsjs."
 author: "TJ Gore"
 authorLink: "https://tjwgore.com"
 mainImage: ""
 haveImage: false
-color: "bg-red-gradient"
+color: "bg-dark-gradient"
 keywords: ["Data Fetching Nextjs Site Built with Tailwind"]
-categories: ["Laravel"]
-draft: true
+categories: ["Nextjs"]
+draft: false
 ---
 
 ## Getting started
@@ -79,7 +79,6 @@ Your index page should have updated to show Post 1.
 For our data, you can create a data folder with a `posts.json` file containing posts as json data
 
 ```json
-// data/posts.json
 {
     "posts": [
         {
@@ -109,18 +108,17 @@ For our data, you can create a data folder with a `posts.json` file containing p
     ]
 }
 ```
-**Note:** JSON is not th same as a javascript object. In json, both the key and value must have quotes
-
+**Note:** JSON is not th same as a javascript object. In json, both the key and value must have quotes.
+This is json.
 ```json
-// this is json
+
 {
     "title": "This is the title",
     "functions": "Not possible in json"
 }
 ```
-
+ This is an object.
 ```javascript
-// this ia an object
 {
     title: "This is a title",
     talk: function () {
@@ -160,12 +158,12 @@ const Index = () => (
 
 export default Index
 ```
-
+We used the `map` function to loop through and display all the posts.  
 You should now see a listing of post on your index page.
 
-## Dynamic Page
+## Dynamic Pages with [file].js
 
-We now have a content to build our dynamic pages.
+We now have content to build our dynamic pages.
 Instead of creating a page for each post item, which is a bad idea, we can dynamically build each post page.
 
 To build dynamic pages, we must create a file with brackets like this `[post].js`
@@ -250,14 +248,12 @@ export default Post
 ```
 
 The `Post.getInitialProps` is used to get the query string `post` from the context object, and then it is returned as a prop.
+
 In the Post component, instead of using the entire props object, we can pull out the `postQuery` variable only.
 The `postQuery` is then used to search the `blog.posts` object using the javascript `find` function.
 
 Before nextjs 9 and above, we used to be able to get the query with `useRouter().query`, but it doesn't seem to be supported anymore. 
 
 Thats it!
+
 You should now be able to visit all the post and see their individual pages with nice looking urls.
-
-**Fixed:** As you navigate from page to page you may have notice your page flicker from unstyled to styled. 
-That's because the cdn version of tailwind we were using at first redirects to the latest version. This caused the css to be loaded after our page html was loaded.
-

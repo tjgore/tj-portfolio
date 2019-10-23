@@ -255,3 +255,12 @@
     }
   }
 }
+
+#TableOfContents {
+  > ul:first-child {
+    list-style-type: none;
+    padding: 0px;
+    padding-left: 15px;
+  }
+ 
+}
