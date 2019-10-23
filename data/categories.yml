@@ -1,6 +1,7 @@
 enabled: false
 categories:
   - Javascript
+  - Nextjs
   #- PHP
  # - React
   - Laravel

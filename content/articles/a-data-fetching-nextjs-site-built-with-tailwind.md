@@ -1,7 +1,6 @@
 ---
 title: "A Data Fetching Nextjs Site Built with Tailwind"
-category: ["javascript"]
-date: 2019-10-20
+date: 2019-10-21
 description: "Building a simple nextjs book store site"
 author: "TJ Gore"
 authorLink: "https://tjwgore.com"
@@ -9,6 +8,7 @@ mainImage: ""
 haveImage: false
 color: "bg-red-gradient"
 keywords: ["Data Fetching Nextjs Site Built with Tailwind"]
+categories: ["Nextjs"]
 draft: false
 ---
 
@@ -17,6 +17,7 @@ draft: false
 In this article, I'm going to build a book site called Freshly. 
 
 We will go through how to 
+
 - setup a project with simple layout structure 
 - add head tags for meta data
 - use tailwindcss
@@ -36,7 +37,15 @@ npx create-next-app freshly
 mkdir -p public/static
 ``` 
 
-The commands above should create a freshly folder, initiate a package.json file, install 3 packages needed for nextjs, and create 3 folders, pages, components, and public/static, to hold your webpages, reusable components and static resources.
+The commands above should 
+
+- create a freshly folder, 
+- initiate a package.json file, 
+- install 3 packages needed for nextjs, 
+- and create 3 folders: 
+    - pages - to hold your webpages,
+    - components - to store reusable components
+    - and public/static - to store static resources, like css, images, and javascript.
 
 If you take a look within your package.json, you'll notice 3 script commands as shown below
 
@@ -194,7 +203,8 @@ export default Index
 ```
 All the changes made above can be view/downloaded from the [simple-start repo](https://github.com/tjgore/freshly/tree/simple-start).
 
-# Using Tailwindcss
+
+## Using Tailwindcss
 
 Let's add some styling to our simple nextjs project with tailwind css to speed up the design process.
 

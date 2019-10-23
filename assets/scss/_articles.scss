@@ -84,6 +84,10 @@
   @include category-color($javascript, $gray-800)
 }
 
+.category-nextjs {
+  @include category-color($nextjs)
+}
+
 .category-react {
   @include category-color($gray-800, $react)
 }
