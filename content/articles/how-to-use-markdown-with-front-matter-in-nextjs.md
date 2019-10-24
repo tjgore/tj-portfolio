@@ -23,9 +23,9 @@ We will use [frontmatter-markdown-loader](https://hmsk.github.io/frontmatter-mar
 There are other cool packages to import our markdown such as:
 
 - [raw-loader](https://github.com/webpack-contrib/raw-loader) with [react-markdown](https://github.com/rexxars/react-markdown) - turns markdown files into a string and then passes the string to react-markdown to process, but can not handle front matter.
-- and [processmd](https://github.com/tscanlin/processmd) - turns markdown files into JSON files.
+- and [processmd](https://github.com/tscanlin/processmd) - turns markdown files into JSON files. 
 
-but I found `frontmatter-markdown-loader` easier to use.
+but I found `frontmatter-markdown-loader` to be the easiest to get started with and use.
 
 Nextjs does not use markdown content by default, so we have to handle how markdown is read into our project.
 
