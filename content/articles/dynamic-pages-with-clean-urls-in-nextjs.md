@@ -14,8 +14,8 @@ draft: false
 
 ## Getting started
 
-Let's build dynamic pages with clean urls in nextsjs. 
-You may want to create pages based on data that's pulled in from your backend api or a third party source.
+Let's build dynamic pages with clean URLs in nextsjs. 
+You may want to create pages based on data that are pulled in from your backend API or a third-party source.
 
 To do this let's set up a project with a simple structure.
 
@@ -24,7 +24,7 @@ npx create-next-app dynamic-pages
 cd dynamic-pages
 ```
 
-Now start up your development server and visit http:localhost:3000 to see the default next.js page
+Now start up your development server and visit [http:localhost:3000](http://localhost:3000) to see the default next.js page.
 
 ```bash
 npm run dev
@@ -32,6 +32,8 @@ npm run dev
 
 Let's update our `index.js` to be a page with a Nav component and a listing of articles.
 To keep things simple, let's just use tailwind css cdn to add a little bit of styling.
+
+**Note:** Tailwind css is very large and its best to use it locally and [purgecss](https://www.purgecss.com/) the file for better performance. 
 
 ```jsx
 // components/nav.js
@@ -76,7 +78,8 @@ export default Index
 
 Your index page should have updated to show Post 1.
 
-For our data, you can create a data folder with a `posts.json` file containing posts as json data
+For our data, you can create a data folder with a `posts.json` file containing posts as JSON data.
+This JSON data will act as our api or third-party data source.
 
 ```json
 {
@@ -108,8 +111,8 @@ For our data, you can create a data folder with a `posts.json` file containing p
     ]
 }
 ```
-**Note:** JSON is not th same as a javascript object. In json, both the key and value must have quotes.
-This is json.
+**Note:** JSON is not the same as a javascript object. In JSON, both the key and value must have quotes.
+This is JSON.
 ```json
 
 {
@@ -128,7 +131,7 @@ This is json.
 ```
 
 
-Next, update your `index.json` file again to pull in the `posts.json` and use it to add a listsing of posts to the page.
+Next, update your `index.json` file again to pull in the `posts.json` and use it to add a listing of posts to the page.
 
 ```jsx
 // pages/index.js
@@ -159,14 +162,14 @@ const Index = () => (
 export default Index
 ```
 We used the `map` function to loop through and display all the posts.  
-You should now see a listing of post on your index page.
+You should now see a listing of posts on your index page.
 
 ## Dynamic Pages with [file].js
 
 We now have content to build our dynamic pages.
-Instead of creating a page for each post item, which is a bad idea, we can dynamically build each post page.
+Instead of creating a page for each post's item, which is a bad idea, we can dynamically build each post page.
 
-To build dynamic pages, we must create a file with brackets like this `[post].js`
+To build dynamic pages, we must create a file with brackets like this `[post].js`.
 
 ```bash
 touch pages/[post].js
@@ -205,10 +208,10 @@ const Index = () => (
 
 export default Index
 ```
-The `as` prop on the Link component is needed to pass the query param and keep the url looking clean. 
+The `as` prop on the Link component is needed to pass the query param and keep the URL looking clean. 
 The `href` tells nextjs which page should handle the query being passed.
 
-Without the `as` prop, we would have to change the `href` prop to this `/blog?post=what-is-docker`, in order for the Links to work.
+Without the `as` prop, we would have to change the `href` prop to this `/blog?post=what-is-docker`, for the Links to work.
 
 Update the `[post].js` page to import the posts.json and search through the items and find the post that we selected to read.
 
@@ -254,6 +257,6 @@ The `postQuery` is then used to search the `blog.posts` object using the javascr
 
 Before nextjs 9 and above, we used to be able to get the query with `useRouter().query`, but it doesn't seem to be supported anymore. 
 
-Thats it!
+That's it!
 
-You should now be able to visit all the post and see their individual pages with nice looking urls.
+You should now be able to visit all the postS and see their pages with nice-looking URLs.

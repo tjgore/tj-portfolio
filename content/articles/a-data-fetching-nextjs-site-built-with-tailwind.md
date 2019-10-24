@@ -19,7 +19,7 @@ In this article, I'm going to build a book site called Freshly.
 We will go through how to 
 
 - setup a project with simple layout structure 
-- add head tags for meta data
+- add head tags for metadata
 - use tailwindcss
 - fetching data
 - set up .env file
@@ -27,7 +27,7 @@ We will go through how to
 
 You can find the completed project [here](https://github.com/tjgore/freshly/tree/master)
 
-## Getting started
+## Getting started with the Layout
 
 Let's get started with the nextjs project setup.
 
@@ -74,7 +74,7 @@ Run `npm run dev` to start your dev server and visit [http://localhost:3000](htt
 
 Next is to create the project layout. 
 
-There are few ways to create the layout. For now, I will just demonstrate one.
+There are a few ways to create the layout. For now, I will just demonstrate one.
 
 ```bash
 touch components/Layout.js components/Nav.js components/Footer.js
@@ -116,9 +116,9 @@ const Layout = (props) => (
 export default Layout
 ```
 
-We just created a Layout, Nav, and Footer component. The Layout component uses the `props.children` to display the components inner content, as seen in index.js.
+We just created a Layout, Nav, and Footer component. The Layout component uses the `props.children` to display the components' inner content, as seen in index.js.
 
-Since we want the navigation to be used on all our pages, We added the Nav to the Layout component, which basically serves as the base for all your pages.
+Since we want the navigation to be used on all our pages, We added the Nav to the Layout component, which serves as the base for all your pages.
 
 ```jsx
 // pages/index.js
@@ -136,7 +136,7 @@ The changes are displayed with the help of hot module reloading.
 
 Let's create the about page in `pages/about` to add more links and update the navigation component using the `Link` component provided by `next/link`.
 
-Nextjs does not use the normal `a` tag to navigate between pages, instead the `Link` component is used as a replacement.
+Nextjs does not use the normal `a` tag to navigate between pages, instead, the `Link` component is used as a replacement.
 
 ```jsx
 // pages/about.js
@@ -169,9 +169,9 @@ export default Nav
 
 You can now navigate between the about and home page with help of the Nav component in the Layout.
 
-##  Adding a head tag for meta data
+##  Adding a head tag for metadata
 
-To add meta data to your pages, let's create a Head component with `next\head` which allows us to create the head tag with meta data.
+To add metadata to your pages, let's create a Head component with `next\head` which allows us to create the head tag with metadata.
 
 ```jsx
 // components/Head.js
@@ -208,9 +208,9 @@ All the changes made above can be view/downloaded from the [simple-start repo](h
 
 Let's add some styling to our simple nextjs project with tailwind css to speed up the design process.
 
-Tailwindcss is a utility based css framework. The reasons I prefer using tailwind over others are: 
+Tailwindcss is a utility-based css framework. The reasons I prefer using tailwind over others are: 
 
-- it helps to prevent your css files from growing continously in large projects
+- it helps to prevent your css files from growing continuously in large projects.
 - and it gives the flexibility to create many different designs without having to touch css.
 
 ```bash
@@ -218,7 +218,7 @@ npm install tailwindcss @zeit/next-css
 ```
 
 `@zeit/next-css` is used to add css to nextjs. 
-To use it you also need to add its config file, `next.config.js`
+To use it you also need to add its config file, `next.config.js`.
 
 
 ```javascript
@@ -229,7 +229,7 @@ module.exports = withCSS({})
 ```
 This is just a basic start without any config to use it.
 
-To use tailwind, create a `public/static/tailwind.css` file which tells tailwind how to generate its css
+To use tailwind, create a `public/static/tailwind.css` file which tells tailwind how to generate its css.
 
 ```css
 /* public/static/tailwind.css */
@@ -300,9 +300,9 @@ npm install isomorphic
 ```
 
 This method can fetch data both on the server and in the browser. 
-The first page load executes `isomorphic-unfetch` on the server. When navigating on the client side with the Link component `isomorphic-unfetch` executes in the browser.
+The first page load executes `isomorphic-unfetch` on the server. When navigating on the client-side with the Link component `isomorphic-unfetch` executes in the browser.
 
-Update your `pages/index.js` to pull in data
+Update your `pages/index.js` to pull in data.
 
 ```jsx
 // pages/index.js
@@ -418,9 +418,8 @@ To keep things more organized and easier to manage let's add an `.env` file to h
 ```bash
 touch .env
 ```
-
-```
-// .env 
+.env file
+```bash 
 NYT_API_KEY=isbvhjbvjhbsvubiuysidyuvbahsb
 ```
 
@@ -429,7 +428,7 @@ To use our .env file, we need to install 2 packages that will allow us to read a
 ```bash
 npm install dotenv.webpack dotenv
 ```
- Now include them in your `next.config.js`
+ Now include them in your `next.config.js`.
 
  ```javascript
  //next.config.js
@@ -478,11 +477,11 @@ export default Index
 ```
 To keep things clean and nice, we used back-ticks "\`" and template literals `${variable-name}` to add the variable to a string without the use `+`.
 
-Stop your development server with `ctrl + C` and run `npm run build && npm start` to start up your production server. Visit your site at `http://localhost:3000` to see your book store.
+Stop your development server with `Ctrl + C` and run `npm run build && npm start` to start up your production server. Visit your site at `http://localhost:3000` to see your book store.
 
 ## Deploy to now
 
-To get your site ready to be deploy on [now](https://zeit.co) we have to add a `now.json` and add now secrets.
+To get your site ready to be deployed on [now](https://zeit.co) we have to add a `now.json` and add now secrets.
 
 If you don't have a now account, no worries, you can create one by running `npx now login`.
 This command will run through the steps to set up an account.
@@ -518,5 +517,5 @@ npx now secrets remove @nyt_api_key
 Time to deploy, at the root of your project folder run `npx now .`
 This command will take your project and run nextjs build process and start the production nodejs server. 
 
-Once your deployment is done, you should be able to visit the weird looking url that was printed out in your terminal.
+Once your deployment is done, you should be able to visit the weird-looking URL that was printed out in your terminal.
 It looks something like this `Ready! Deployed to https://freshly-6eyxu73.tjgore.now.sh [in clipboard] [24s]`
