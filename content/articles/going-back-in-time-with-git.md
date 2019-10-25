@@ -9,7 +9,7 @@ haveImage: false
 color: "bg-orange-gradient"
 keywords: ["Git has some very useful commands to allow us to undo changes"]
 categories: ["Git"]
-draft: true
+draft: false
 ---
 
 ## Intro
