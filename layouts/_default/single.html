@@ -3,7 +3,7 @@
 <meta name="keywords" content='{{ delimit .Keywords ", " }}'/>
 <meta content="{{ .Site.Title }}" property="og:site_name">
 <meta content="{{ .Title }}| {{ .Site.Title }}" property="og:title">
-<meta content="{{ .Site.BaseURL }}{{ if .Params.haveImage }}{{ .Params.mainImage }} {{ else }}images/world.jpg {{ end }}" property="og:image">
+<meta content="{{ .Site.BaseURL }}{{ if .Params.haveImage }}{{ .Params.mainImage }} {{ else }}/images/world.jpg {{ end }}" property="og:image">
 <meta content="{{ .Description }}" name="og:description">
 <meta content="{{ .Permalink }}" property="og:url">
 <link rel="canonical" href="{{ .Permalink }}">
