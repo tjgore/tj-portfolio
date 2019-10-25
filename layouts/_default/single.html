@@ -6,6 +6,8 @@
 <meta content="{{ .Site.BaseURL }}{{ if .Params.haveImage }}{{ .Params.mainImage }} {{ else }}/images/world.jpg {{ end }}" property="og:image">
 <meta content="{{ .Description }}" name="og:description">
 <meta content="{{ .Permalink }}" property="og:url">
+<meta property="twitter:image" content="{{ .Site.BaseURL }}{{ if .Params.haveImage }}{{ .Params.mainImage }} {{ else }}/images/world.jpg {{ end }}"/>
+<meta name="twitter:creator" content="@TJGore3">
 <link rel="canonical" href="{{ .Permalink }}">
 <title>{{ .Title }} | {{ .Site.Title }}</title>
 {{ end }}
