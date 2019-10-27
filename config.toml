@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "TJ Gore's Portfolio"
 pygmentsCodeFences = true
 enableRobotsTXT = true
-googleAnalytics = ""
+googleAnalytics = "UA-68691339-8"
 
 [taxonomies]
   category = "categories"
