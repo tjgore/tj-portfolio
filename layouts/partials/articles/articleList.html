@@ -7,34 +7,41 @@
         <a href="{{.Permalink}}">
           <div class="card-inner article-overlay">
             {{ range .Params.categories }}
-            <span class="badge category-{{ lower . }}">{{ . }}</span>
+            <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}' class="badge category-{{lower .}}">
+              {{.}} 
+            </a>
             {{ end }}
-            <h2 class="h3 pt-2 font-weight-bold">{{ .Title }}</h2>
-            <p class="mb-2">{{ .Params.description }}</p>
+            <a href="{{.Permalink}}">
+              <div class="text-white">
+                  <h2 class="h3 pt-2 font-weight-bold">{{ .Title }}</h2>
+                  <p class="mb-2">{{ .Params.description }}</p>
+              </div>
+            </a>
             <p class="small pt-2">
               <i class="far fa-calendar-alt"></i>
               {{ .Date.Format "Jan 02, 2006" }}  &nbsp;
-              <i class="fas fa-user-circle"></i>
-              {{ .Params.author }}
             </p>
           </div>
-        </a>
       </article> 
       {{ else }}
       <article class="card {{.Params.color}}">
-        <a href="{{.Permalink}}">
           <div class="card-inner">
             {{ range .Params.categories }}
-            <span class="badge category-{{ lower . }}">{{ . }}</span>
+            <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}' class="badge category-{{lower .}}">
+              {{.}} 
+            </a>
             {{ end }}
-            <h2 class="h3 pt-2 font-weight-bold">{{ .Title }}</h2>
-            <p class="mb-2">{{ .Params.description }}</p>
+            <a href="{{.Permalink}}">
+              <div class="text-white">
+                  <h2 class="h3 pt-2 font-weight-bold">{{ .Title }}</h2>
+                  <p class="mb-2">{{ .Params.description }}</p>
+              </div>
+            </a>
             <p class="small pt-2">
               <i class="far fa-calendar-alt"></i>
               {{ .Date.Format "Jan 02, 2006" }}  &nbsp;
             </p>
           </div>
-        </a>
       </article>
       {{ end }}
     {{if and (not (eq 0 $index)) (eq 1 (mod $index 2)) }}

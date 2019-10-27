@@ -21,12 +21,45 @@
 <main class="single-article">
   <div class="container">
     <div class="row">
+      {{ if in .Params.categories "Series"}}
+      {{- partial "articles/header" . -}}
+      <div class="col-12 col-md-8 py-5 article-body">
+        {{.Content}}
+      </div>
+      <div class="col-md-4 col-12 mt-5 pt-5">
+        <div class="shadow p-4 rounded sticky-top mb-5">
+          <h5>{{ .Params.seriesTitle }}</h5>
+          <hr/>
+          {{range .Params.series }}
+            {{ range $index, $element := . }}
+          <ul class="text-secondary list-unstyled">
+              {{ if eq $element "active" }}
+              <li class="bg-primary p-2 rounded">
+                <a href='#' class="text-white block ml-4">
+                  {{ $index | humanize }} 
+                </a>
+              </li>
+              {{ else }}
+              <li class="">
+                <a href='{{ "/articles/" | relLangURL }}{{ $element | urlize }}' class="text-secondary block ml-4">
+                  {{ $index | humanize }} 
+                </a>
+              </li>
+              {{ end }}
+              {{ end }}
+            
+          </ul>
+          {{end}}
+        </div>
+      </div>
+      {{ else }}
       {{- partial "articles/header" . -}}
       <div class="col-12 col-md-8 offset-md-2 py-5 article-body">
           <h2>Table of Contents</h2>
           {{ .TableOfContents }}
         {{.Content}}
       </div>
+      {{ end }}
     </div>
   </div>
 </main>

@@ -80,6 +80,10 @@
   }
 }
 
+.category-series {
+  @include category-color($series)
+}
+
 .category-javascript {
   @include category-color($javascript, $gray-800)
 }
