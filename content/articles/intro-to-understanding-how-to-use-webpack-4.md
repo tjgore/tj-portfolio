@@ -20,7 +20,7 @@ According to [webpack's site](https://webpack.js.org/concepts/)
 
 A javascript bundler in simple terms is a tool that takes your javascript and converts it as needed. 
 
-For example, it can take es6 javascript and translate it down to javascript that all browsers can understand, minfy and compile javascript, or even allow your css to be imported and used in javascript.
+For example, it can take es6 javascript and translate it down to javascript that all browsers can understand, minify and compile javascript, or even allow your css to be imported and used in javascript.
 
 It's also not just limited to javascript as you will soon see.
 
@@ -43,7 +43,8 @@ cd learning-webpack
 npm init -y
 ```
 
-Now install `webpack` and `webpack-cli` as a dev dependency in `package.json`
+Now install `webpack` and `webpack-cli` as a dev dependency in `package.json`.
+
 ```bash
 npm install --save-dev webpack webpack-cli
 ```
@@ -56,7 +57,7 @@ You can open your package.json and find these new additions to the file.
     "webpack-cli": "^3.3.9"
   }
 ```
-Also update your `package.json` npm scripts to look like the one below:
+Also, update your `package.json` npm scripts to look like the one below:
 
 ```javascript
 "scripts": {
@@ -142,11 +143,11 @@ module.exports = {
     }
 }
 ```
-This is the start of a `webpack.config.js` which sets some common defaults, the mode, entry file/s and the output.
+This is the start of a `webpack.config.js` which sets some common defaults, the mode, entry file/s, and the output.
 
 Since `webpack.config.js` is a javascript object all the values can be set dynamically.
 
-For example, `mode` could be set using something like the following 
+For example, the `mode` could be set using something like the following 
 
 ```javascript
 // ....
@@ -199,7 +200,7 @@ npm start
 
 Your `index.js` and `component.js` were transpile and combined into the `dist/main.js` so that your optimized javascript can be used by all browsers.
 
-**Note:** By default webpack will minify all your javascript files, once your mode is set to production.
+**Note:** By default, webpack will minify all your javascript files, once your mode is set to production.
 
 ## html-webpack-plugin and html-loader
 
@@ -242,7 +243,7 @@ Now execute webpack by running:
 npm start
 ```
 
-Your dist folder should now have a index.html file.
+Your dist folder should now have an index.html file.
 
 You can open your `dist/index.html`file in the browser to see it working and using the new `dist/main.js` file.
 
@@ -331,12 +332,12 @@ Run `npm start` again for the last time.
 
 Now anytime you change any files, your project should automatically refresh in the browser.
 
-Also `npm start` will no longer create/update the dist folder, since it is only needed for the production version of your project.
+Also, `npm start` will no longer create/update the dist folder since it is only needed for the production version of your project.
 
 
 ## Create a production webpack config
 
-You can actually have multiple webpack configs and select which one you want to run.
+You may have multiple webpack configs and select which one you want to run.
 
 Create a `webpack.prod.js` file and update our `package.json` to use it for production.
 
