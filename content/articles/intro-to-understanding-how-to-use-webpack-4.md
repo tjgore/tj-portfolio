@@ -405,6 +405,13 @@ module.exports = {
 }
 ```
 
+To use webpack with the production config run
+
+```bash
+npm run build
+```
+This will run the `build` command in your `package.json` scripts.
+
 The differences between the default and the production config are:
 
 - the production config set the `mode` to production, which tells webpack to minify all javascript,
