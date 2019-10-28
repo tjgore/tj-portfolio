@@ -1,0 +1,20 @@
+id: un487iva923jh
+seriesTitle: Building a blog with Nextjs Series
+series:
+    0:
+    - name: Into
+      url: "test-series"
+    1: 
+    - name: "Project Set up"
+      url: "intro-to-understanding-how-to-use-webpack-4"
+      last: true
+    2:
+    - name: "Conecting markdown"
+      url: "active"
+    3:
+    - name: "Using Contenful cms"
+      url: ""
+      next: true
+    4:
+    - name: "Deploment"
+      url: "deploy"
