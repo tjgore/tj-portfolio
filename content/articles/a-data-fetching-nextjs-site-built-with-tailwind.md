@@ -189,7 +189,7 @@ export default Head
 
 // scr/pages/index.js
 // other imports
-import Head from 'next/head'
+import Head from '../components/Head'
 
 const Index = () => (
     <Layout>

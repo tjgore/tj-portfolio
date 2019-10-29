@@ -1,5 +1,5 @@
 ---
-title: Build a Blog with Nextjs Series
+title: Build a JAMstack Blog with Nextjs Series
 date: 2019-10-27
 description: "This is the start of nextjs series where we will be building out a full blog wth nextjs."
 author: "TJ Gore"
@@ -9,11 +9,14 @@ haveImage: false
 color: "bg-red-gradient"
 keywords: ["Nextjs series where we will be build a full blog wth nextjs."]
 categories: ["Nextjs", "Series"]
-seriesTitle: Build a Blog with Nextjs Series
+seriesTitle: Build a Nextjs Blog Series
 series:
     0:
     - name: Introduction
       url: "active"
+    1:
+    - name: Project Structure and Layout
+      url: "project-structure-and-layout-nextjs-blog"
 draft: false
 ---
 
@@ -28,10 +31,14 @@ The Blog site we are building will include:
 - single post page that will include the table of contents, code higlighting, and next and preview links 
 - all post will be written in markdown
 - categories and tags, along with their pages
-- series (a collection of posts)
 - comment section
 - social media share buttons
+- algolia search
 
+Some requirements to go through this series are:
+
+- Installing nodejs and npm 
+- and know a bit of javascript 
 
 We will learn and use many of next.js concepts such as:
 
@@ -59,3 +66,5 @@ We will even connect our blog to some content management systems, Mayb?
 - Sanity
 
 Stay tune and see what we will accomplish throughout this series!
+
+**Note:** This series will go through many iterations as we build the site, so feel free to review the content and code from time to time. 
