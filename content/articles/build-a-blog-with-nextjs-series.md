@@ -9,14 +9,8 @@ haveImage: false
 color: "bg-red-gradient"
 keywords: ["Nextjs series where we will be build a full blog wth nextjs."]
 categories: ["Nextjs", "Series"]
-seriesTitle: Build a Nextjs Blog Series
-series:
-    0:
-    - name: Introduction
-      url: "active"
-    1:
-    - name: Project Structure and Layout
-      url: "project-structure-and-layout-nextjs-blog"
+seriesId: 0
+activeUrl: "build-a-blog-with-nextjs-series"
 draft: false
 ---
 
