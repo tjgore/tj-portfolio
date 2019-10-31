@@ -87,12 +87,21 @@ Tailwind css is very large so it's best we remove all unused css from our projec
 ```bash
 npm i -D @fullhuman/postcss-purgecss
 ```
+We can also minify our css using `cssnano`.
 
-Update your `post.config.js` to use purgecss.
+```bash
+npm i -D cssnano
+```
+
+Update your `post.config.js` to use purgecss and cssnano.
 
 ```javascript
-// post.config.js
+// postcss.config.js
 const tailwindcss = require('tailwindcss');
+const cssnano = require('cssnano')({
+  preset: 'default'
+})
+
 const purgecss = require('@fullhuman/postcss-purgecss')({
 
     // Specify the paths to all of the template files in your project 
@@ -109,14 +118,14 @@ module.exports = {
     plugins: [
         tailwindcss('./tailwind.config.js'),
         require('postcss-preset-env'),
-        ...process.env.NODE_ENV === 'production' ? [purgecss] : []
+        ...process.env.NODE_ENV === 'production' ? [purgecss, cssnano] : []
         ]
   }
 ```
 
-In the plugin's array, we tell postcss not to use purge unless we are in production. 
+In the plugin's array, we tell postcss not to use purge and cssnano unless we are in production. 
 
-To see purgecss in action locally run the following command and check your `public/styles.css` before and after.
+To see purgecss and cssnano in action locally run the following command and check your `public/styles.css` before and after.
 
 ```bash
 # Before purgess
@@ -126,7 +135,7 @@ npm run build-tailwind
 NODE_ENV=production npm run build-tailwind 
 ```
 
-For local development there is no need to purge our css, we will stick with
+For local development there is no need to purge or minify our css, we will stick with using
 `npm run build-tailwind`.
 
 To use tailwind in our project, we should import it into our layout component, which allows us to access the styles in any component or page. 
