@@ -64,18 +64,19 @@ Your file structure should look like below.
 │   ├── layout.js
 │   └── nav.js
 ├── content # storage of markdown content files
-├── data # for storing data 
-├── .env
+├── data # for storing data, works like an api
+├── .env # never git commit this file
+├── .env.example
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
 ├── pages
 │   ├── blog
-│   │   └── [post].js # dynamic url page for post
-│   ├── blog.js
+│   │   └── [post].js # dynamic url page for post content
+│   ├── blog.js # listing of posts
 │   └── index.js
 ├── public
-└── resources
+└── resources # unprocessed styles and other assets
 ```
 
 The `[post].js` file is a dynamic page which will allow us to render a post's content. You can create a quick demo site [here](/articles/dynamic-pages-with-clean-urls-in-nextjs/).
@@ -189,7 +190,7 @@ const Blog = () => (
 
 export default Layout(Blog)
 ```
-The blog page has a listing of 2 posts that link to the [post].js page. The Link component 'as' prop helps us to generate clean urls. 
+The blog page has a listing of 2 posts that link to the [post].js page. The Link component `as` prop helps us to generate clean urls. 
 
 ```jsx
 // pages/blog/[post].js
@@ -215,8 +216,6 @@ This will store some of our metadata in a single place to make it easier to main
 ```json
 {
     "meta": {
-        "localBaseUrl": "http://localhost:3000/",
-        "baseUrl": "",
         "siteName": "NextStack",
         "description": "This is a site about the NextStack and all its useful tools and applications.",
         "keywords": "NextStack Blog",
@@ -292,4 +291,4 @@ const Index = () => (
 export default Layout(Index)
 ```
 
-That's it for the project's layout, for now. Next up is adding a css framework. We will use tailwindcss.
+That's it for the project's layout, for now. Next up is installing and adding a css framework. We will be using tailwindcss.

@@ -64,33 +64,35 @@
       </div>
       {{ end }}
     </div>
+
     {{ if in .Params.categories "Series"}}
+  
     <div class="row">
       <div class="col-12 my-5 py-4">
           <div class="row">
-
-          {{ range .Params.series }}
+          {{ $seriesData := index .Site.Data.series.all (int .Params.seriesId) }}
           
-          {{ range $index, $element := . }}
-  
-            {{ if $element.last }}
+          {{ range $index, $element := $seriesData.content }}
+          {{ $length := len $seriesData.content }}
+      
+          {{ if and (eq $element.url $.Params.activeUrl) (gt $index 0) }}
+          {{ $previous := index $seriesData.content (int (sub $index 1)) }}
               <div class="col-12 col-md-6 p-4 border">
-                  <a href='{{ "/articles/" | relLangURL }}{{ $element.url | urlize }}' class="block">
+                  <a href='{{ "/articles/" | relLangURL }}{{ $previous.url | urlize }}' class="block">
                   <h5 class="text-dark">Previous Article</h5>
-                    <p class="font-weight-light ">{{ $element.name | humanize }} </p> 
+                    <p class="font-weight-light ">{{ $previous.name | humanize }} </p> 
                   </a>
               </div>
-
-              {{ else if $element.next }}
+          {{ end }}
+          {{ if and (eq $element.url $.Params.activeUrl) (lt $index (int (sub $length 1))) }}
+              {{ $nextlink := index $seriesData.content (int (add $index 1)) }}
               <div class="col-12 col-md-6 p-4 border">
-                  <a href='{{ "/articles/" | relLangURL }}{{ $element.url | urlize }}' class="block">
+                  <a href='{{ "/articles/" | relLangURL }}{{ $nextlink.url | urlize }}' class="block">
                   <h5 class="text-dark">Next Article</h5>
-                    <p class="font-weight-light ">{{ $element.name | humanize }} </p> 
+                    <p class="font-weight-light ">{{ $nextlink.name | humanize }} </p> 
                   </a>
               </div>
             {{ end }}
-
-          {{ end}}
 
           {{ end }}
         </div>
