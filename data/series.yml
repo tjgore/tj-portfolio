@@ -6,3 +6,9 @@ all:
 
         - name: Project Structure and Layout
           url: project-structure-and-layout-nextjs-blog
+        
+        - name: Installing Tailwindcss
+          url: installing-tailwind-css-nextjs-blog
+
+        - name: Designing our blog (coming soon)
+          url: "#"

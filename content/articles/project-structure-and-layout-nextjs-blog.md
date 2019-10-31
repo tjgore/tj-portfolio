@@ -31,9 +31,9 @@ Create your file structure by running the following commands to add some new fil
 
 ```bash
 # mkdir - to make directory
-mkdir public/images content data
+mkdir public/images content data resources
 ```
-The `images` folder will hold your images, the `content` folder will have your markdown content and the `data` folder will act as a database for other types of data storage.
+The `images` folder will hold your images, the `content` folder will have your markdown content, the resources folder will store any files that need to be processed before going into the public folder, and the `data` folder will act as a database for other types of data storage.
 
 ```bash
 # touch - to create files
@@ -74,7 +74,8 @@ Your file structure should look like below.
 │   │   └── [post].js # dynamic url page for post
 │   ├── blog.js
 │   └── index.js
-└── public
+├── public
+└── resources
 ```
 
 The `[post].js` file is a dynamic page which will allow us to render a post's content. You can create a quick demo site [here](/articles/dynamic-pages-with-clean-urls-in-nextjs/).
@@ -121,7 +122,9 @@ const Footer = () => (
 export default Footer
 ``` 
 
-Next up is the `Layout` component which is a Higher Order Component (HOC) that we will use to wrap our pages to act as the base.
+Next up is the `Layout` component which is a Higher Order Component (HOC) that we will use to wrap our pages to act as the base. 
+
+Another example of a HOC is the Link component beacuse it must wrap the tag/s we want to link to.
 
 The Layout will also include the Nav and Footer components since the layout is like the base/foundation. 
 
@@ -164,6 +167,44 @@ export default Layout(Index)
 The Index component is passed to the Layout component and returns jsx containing the Index and its props. 
 
 The Layout is a wrapper component because of its nature of wrapping another component and returning the updated component.
+
+We are also gonna update the blog.js and [post].js pages.
+
+```jsx
+// pages/blog.js
+import Layout from '../components/layout'
+import Link from 'next/link'
+
+const Blog = () => (
+  <>
+    <p>Posts Listing!</p>
+    <Link href="blog/[post]" as="blog/first-post">
+      <h1>First Post click me</h1>
+    </Link>
+    <Link href="blog/[post]" as="blog/second-post">
+      <h1>Second Posts click me</h1>
+    </Link>
+  </>
+)
+
+export default Layout(Blog)
+```
+The blog page has a listing of 2 posts that link to the [post].js page. The Link component 'as' prop helps us to generate clean urls. 
+
+```jsx
+// pages/blog/[post].js
+import Layout from '../../components/layout'
+
+const Post = () => (
+  <>
+    <h1>Title</h1>
+    <p>Post Content right here!</p>
+  </>
+)
+
+export default Layout(Post)
+```
+Later on in this series, the [post].js page will be updated to dynamically pull in the post content based on the url params passed to the Post component, but for now it's just static with the same content.
 
 Remember, in this article, we are just doing the project structure, so for now the pages look very plain and unstyled. 
 
