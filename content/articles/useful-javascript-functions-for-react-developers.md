@@ -8,7 +8,7 @@ mainImage: ""
 haveImage: false
 color: "bg-primary-gradient"
 categories: ["Javascript"]
-keywords: ["Useful Javascript Functions for Frontend Developers",]
+keywords: ["Useful Javascript Functions for Frontend Developers"]
 draft: false
 ---
 

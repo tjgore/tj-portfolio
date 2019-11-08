@@ -11,7 +11,7 @@ keywords: ["Nextjs series where we will be build a full blog wth nextjs."]
 categories: ["Nextjs", "Series"]
 seriesId: 0
 activeUrl: "build-a-blog-with-nextjs-series"
-draft: false
+draft: true
 ---
 
 ## Intro

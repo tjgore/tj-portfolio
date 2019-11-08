@@ -6,15 +6,15 @@ author: "TJ Gore"
 authorLink: "https://tjwgore.com"
 mainImage: ""
 haveImage: false
-color: "bg-secondary-gradient"
+color: "bg-red-gradient"
 keywords: ["Getting started with nextjs project structure and layout"]
-categories: ["Nextjs", "Series"]
-seriesId: 0
-activeUrl: project-structure-and-layout-nextjs-blog
+categories: ["Nextjs"]
 draft: false
 ---
 
 To get started, let's create a nextjs project
+
+## Create nextjs project
 
 Run 
 ```bash
@@ -27,6 +27,7 @@ npm run dev
 
 You should see the default nextjs page at [http://localhost:3000](http://localhost:3000).
 
+## Create project file structure
 Create your file structure by running the following commands to add some new files and folders.
 
 ```bash
@@ -81,6 +82,7 @@ Your file structure should look like below.
 
 The `[post].js` file is a dynamic page which will allow us to render a post's content. You can create a quick demo site [here](/articles/dynamic-pages-with-clean-urls-in-nextjs/).
 
+## Start the project layout 
 Clear the `pages/index.js` and `components/nav.js` files and we will update them to build out the layout.
 
 The `Nav` component will hold our navigation and we will use the `Link` component provided by `next/link` to navigate to other pages.
@@ -169,6 +171,8 @@ The Index component is passed to the Layout component and returns jsx containing
 
 The Layout is a wrapper component because of its nature of wrapping another component and returning the updated component.
 
+## Blog Pages
+
 We are also gonna update the blog.js and [post].js pages.
 
 ```jsx
@@ -208,6 +212,8 @@ export default Layout(Post)
 Later on in this series, the [post].js page will be updated to dynamically pull in the post content based on the url params passed to the Post component, but for now it's just static with the same content.
 
 Remember, in this article, we are just doing the project structure, so for now the pages look very plain and unstyled. 
+
+## Meta component with json data and props
 
 Now, we are going to create the `Meta` component that will store all our page's meta. Before we get started with the meta, we will add a `data/general.json` file. 
 
@@ -291,4 +297,6 @@ const Index = () => (
 export default Layout(Index)
 ```
 
-That's it for the project's layout, for now. Next up is installing and adding a css framework. We will be using tailwindcss.
+That's it for the project's layout. 
+
+Next, you can [install and add tailwindcss framework](./../installing-tailwindcss-with-postcss-nextjs-blog).

@@ -8,14 +8,13 @@ mainImage: ""
 haveImage: false
 color: "bg-orange-gradient"
 keywords: ["How to install tailwindcss with postcss to a nextjs project"]
-categories: ["Nextjs", "Series"]
-seriesId: 0
-activeUrl: installing-tailwind-css-nextjs-blog
+categories: ["Nextjs"]
 draft: false
 ---
 
-To start adding styling to our project, we will install the awesome and easy to use tailwind css framework.
+To start adding styling to a project, we will install the awesome and easy to use tailwind css framework.
 
+## Install Tailwind
 First install tailwind with:
 
 ```bash
@@ -32,7 +31,7 @@ Next, create a `tailwind.css` file that will include and build tailwind css.
 
 @tailwind utilities;
 ```
-
+## Config postcss and nextjs 
 To configure and use tailwind with our nextjs site we have to install `@zeit/next-css`, `postcss-cli`, and `postcss-preset-env`.
 
 ```bash
@@ -61,6 +60,7 @@ const withCss = require('@zeit/next-css')
 module.exports = withCss({})
 ```
 
+## Config and build tailwind css
 To create tailwind's config, `tailwind.config.js`, run the following command. This is used to extend tailwind css. We might use this later on to add more styles. 
 
 ```bash
@@ -81,6 +81,8 @@ We can now run this command to build our css out into `public/styles.css`
 ```bash
 npm run build-tailwindcss
 ```
+
+## Purge and Minify css
 
 Tailwind css is very large so it's best we remove all unused css from our project that isn't being used. We can use `purgecss` to do just that.
 
@@ -138,9 +140,14 @@ NODE_ENV=production npm run build-tailwind
 For local development there is no need to purge or minify our css, we will stick with using
 `npm run build-tailwind`.
 
-To use tailwind in our project, we should import it into our layout component, which allows us to access the styles in any component or page. 
+## Using tailwindcss
+
+To use tailwind in our project, we should import it into a layout component, which allows us to access the styles in any component or page. 
+
+You could also just include into the page/component you want to use tailwind in.
 
 ```javascript
+// component/layout.js
 import '../public/styles.css'
 
 // ... more code
@@ -167,5 +174,9 @@ const Index = () => (
 
 export default Layout(Index)
 ```
+Build tailwind css and start your dev server to view your results.
+```bash
+npm run build-tailwind
 
-Next up we are going to design our blog and include some dummy text to give our pages some life.
+npm start
+```
