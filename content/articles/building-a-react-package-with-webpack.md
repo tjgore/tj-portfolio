@@ -19,7 +19,7 @@ I searched online for hours looking for and trying out solutions, but they didn'
 
 So I decide create the package by trial and error and figure things out along the way.
 
-I'll just create a simple tab component. The main focus is the package and not the component itself.
+I'll just create a simple component to show and hide content. The main focus is the package and not the component itself.
 
 ## Requirements:
 
