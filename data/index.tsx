@@ -54,7 +54,7 @@ export const experience: ExpType[] = [
       },
       {
         key: 'immersive',
-        body: `Using React, Tailwind CSS, a Laravel API, and Vimeo, I rebuilt an interactive course view to be smarter, include course tests, and be more intuitive in guiding users to complete their courses.`,
+        body: `Using React, Tailwind CSS, a Laravel API, and Vimeo, I rebuilt an interactive course view to be smarter, include course challenges, and be more intuitive in guiding users to complete their courses.`,
       },
       {
         key: 'form-engine',
