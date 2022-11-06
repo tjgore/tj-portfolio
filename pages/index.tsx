@@ -8,7 +8,6 @@ import Review from '../components/Review';
 import Faq from '../components/Faq';
 import StyledLink from '../components/StyledLink';
 
-
 export default function Home() {
   return (
     <div className="min-h-screen overflow-hidden bg-slate-900 font-sans leading-relaxed text-white">
@@ -16,7 +15,35 @@ export default function Home() {
         <title>TJ Portfolio</title>
         <meta
           name="description"
-          content="Welcome to my portfolio. I'm TJ Gore, a Full-stack developer with over 7 years of experience and I really love building for the web."
+          content="Welcome to my portfolio. I'm TJ Gore, a full-stack developer with over 7 years of experience and I am passionate about web development."
+        />
+        <meta
+          name="keywords"
+          content="portfolio, web developer, full-stack developer"
+        />
+        <meta
+          content="TJ Gore&#39;s Portfolio"
+          property="og:site_name"
+        />
+        <meta
+          content="TJ Gore&#39;s Portfolio"
+          property="og:title"
+        />
+        <meta
+          content="https://portfolio.us-east-1.linodeobjects.com/tj-logo.png"
+          property="og:image"
+        />
+        <meta
+          content="website"
+          property="og:type"
+        />
+        <meta
+          content="https://tjwgore.com"
+          property="og:url"
+        />
+        <meta
+          content="hello@tjwgore.com"
+          property="og:email"
         />
         <link
           rel="icon"
@@ -26,7 +53,10 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         />
-        <link rel="icon" type="image/x-icon" href="/favicon-32x32.png"></link>
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href="/favicon-32x32.png"></link>
       </Head>
 
       <main>
@@ -94,8 +124,8 @@ export default function Home() {
                 </svg>
               </div>
               <p className="text-lg text-slate-400">
-                TJ is one of the very few people I personally know who&apos;s made his passion define his profession - a truly powerful combination with unimaginable outcomes! He checks
-                all the boxes when it comes to hard work matched with integrity and all heart. 
+                TJ is one of the very few people I personally know who&apos;s made his passion define his profession - a truly powerful combination with unimaginable outcomes! He
+                checks all the boxes when it comes to hard work matched with integrity and all heart.
               </p>
             </div>
             <div className="flex items-center pl-12 md:pl-24">
@@ -123,7 +153,10 @@ export default function Home() {
           <h2 className="mb-10 -translate-y-6 text-center text-4xl font-black capitalize text-slate-300 sm:text-5xl md:text-5xl">More About Me</h2>
 
           <div className="mx-auto grid max-w-4xl gap-y-4 text-lg text-slate-400">
-            <p>I was born and raised on the beautiful island of Antigua. I spent five years in China studying and working and have been living in the USA for the last three and a half years now.</p>
+            <p>
+              I was born and raised on the beautiful island of Antigua. I spent five years in China studying and working and have been living in the USA for the last three and a
+              half years now.
+            </p>
             <p>I&apos;m a full-stack developer with over 7 years of experience and I am passionate about web development.</p>
             <p>My first real world software was a small Java application used to speed up my workflow while working at CIBC First Caribbean International Bank.</p>
             <p>
@@ -131,13 +164,14 @@ export default function Home() {
               <StyledLink href="#exp">work history</StyledLink>.
             </p>
             <p>
-              I&apos;m hard working and love working on projects, big or small, especially when they push me to my limits. That&apos;s when adrenaline kicks in and the fun
-              begins.
+              I&apos;m hard working and love working on projects, big or small, especially when they push me to my limits. That&apos;s when adrenaline kicks in and the fun begins.
             </p>
             <p>
               Take a look at the <StyledLink href="#projects">projects</StyledLink> I&apos;ve built!
             </p>
-            <p>Read more about me in the <StyledLink href="#faq">FAQs</StyledLink>.</p>
+            <p>
+              Read more about me in the <StyledLink href="#faq">FAQs</StyledLink>.
+            </p>
           </div>
         </section>
 
@@ -224,7 +258,7 @@ export default function Home() {
           </p>
           <h2 className="mb-20 -translate-y-6 text-center text-4xl font-black capitalize text-slate-300 sm:text-5xl md:text-5xl">Say Hello or Hire</h2>
 
-          <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 border-b-2 border-slate-700 pb-10 text-slate-400">
+          <div className="mx-auto grid grid-cols-1 gap-10 border-b-2 border-slate-700 pb-10 text-slate-400 md:grid-cols-3">
             <div className="mx-auto">
               <p className="mb-3 text-2xl font-medium text-slate-300">Email Address</p>
               <p className="text-xl">hello@tjwgore.com</p>
@@ -282,7 +316,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="flex flex-col items-center justify-center pt-32 pb-10 text-slate-400 px-4">
+        <footer className="flex flex-col items-center justify-center px-4 pt-32 pb-10 text-slate-400">
           <p className="mb-2 text-lg font-bold">TJ W. GORE</p>
           <p className="text-center">&copy; Copyright 2022. Built with Next.js, Typescript, and Tailwind CSS.</p>
         </footer>
