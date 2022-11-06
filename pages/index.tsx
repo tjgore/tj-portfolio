@@ -95,7 +95,7 @@ export default function Home() {
               </div>
               <p className="text-lg text-slate-400">
                 TJ is one of the very few people I personally know who&apos;s made his passion define his profession - a truly powerful combination with unimaginable outcomes! He checks
-                all the boxes when it comes to hard work matched with integrity and all heart.
+                all the boxes when it comes to hard work matched with integrity and all heart. 
               </p>
             </div>
             <div className="flex items-center pl-12 md:pl-24">
