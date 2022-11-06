@@ -138,7 +138,7 @@ export default function Home() {
               />
               <div>
                 <p className="font-bold text-slate-300">Shauna Taylor</p>
-                <p className="text-slate-300">Marcom Manager at ID4Africa</p>
+                <p className="text-slate-300">Senior Marcom Manager at ID4Africa</p>
               </div>
             </div>
           </div>

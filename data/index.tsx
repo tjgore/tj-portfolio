@@ -503,7 +503,7 @@ export const reviews: ReviewType[] = [
         </span>
       </>
     ),
-    name: 'Shauna Taylor',
+    name: 'Senior Shauna Taylor',
     jobTitle: 'Marcom Manager at ID4Africa',
     avatar: 'https://portfolio.us-east-1.linodeobjects.com/shauna.jpeg',
   },
