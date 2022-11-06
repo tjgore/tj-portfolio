@@ -73,7 +73,7 @@ export const experience: ExpType[] = [
   {
     id: 'Full-APSCA',
     position: 'Remote Full-stack Engineer',
-    duration: 'Aug 2016 - Aug 2022',
+    duration: 'Aug 2016 - Mar 2022',
     years: '5 years 8 months',
     company: 'APSCA',
     companyImage: 'https://portfolio.us-east-1.linodeobjects.com/apsca-logo.png',
