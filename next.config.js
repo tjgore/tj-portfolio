@@ -7,14 +7,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'portfolio.us-east-1.linodeobjects.com',
-        port: '',
-        pathname: '/**',
       },
       {
         protocol: 'https',
         hostname: 'fxt-assets.us-east-1.linodeobjects.com',
-        port: '',
-        pathname: '/**',
       },
 
       
