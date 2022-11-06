@@ -27,37 +27,38 @@ export const experience: ExpType[] = [
     location: 'College Park, Maryland',
     technologies: ['Laravel', 'React', 'Tailwind CSS', 'Semantic UI React', 'PostgreSQL', 'Git', 'AWS S3', 'AWS SQS', 'AWS SNS', 'Algolia', 'Contentful'],
     points: [
+       {
+        key: 'new-product',
+        body: (<>Built and managed a serverless job board product with over nine search filters using React, Mobx, Tailwind CSS, Node.js, Algolia, and Mapbox to validate market fit. <StyledLink href="#talent">View Project</StyledLink></>),
+      },
+       {
+        key: 'notification',
+        body: `Built notification features and preferences across Laravel microservices using AWS SNS and SQS to alert users of course activities.`,
+      },
       {
         key: 'migrate',
-        body: `Migrated and normalized large amounts of data from wordpress structured databases to a Laravel API to improve data management.`,
+        body: `Migrated and normalized large amounts of data from WordPress structured databases to a Laravel API to improve data management.`,
       },
       {
         key: 'sql',
-        body: `Worked with complex SQL query to generate user enrollment and activity reports on a schedule.`,
+        body: `Worked with complex SQL queries to generate user enrollment and activity reports on a schedule.`,
       },
       {
         key: 'ratings',
-        body: `Used Laravel to Build ratings and reviews for the course platform to allow users to give feedback and to allow team members to collect data on what's working.`,
+        body: `Used Laravel to build ratings and reviews for the course platform to allow users to give feedback and to allow team members to collect data on what's working.`,
       },
       {
         key: 'immersive',
-        body: `Rebuilt the immersive view, the main way to interact with courses, to be smarter, include course tests, and be more intuitive to guide users to complete courses. The immersive is built on top of React, Tailwind CSS and Vimeo.`,
+        body: `Using React, Tailwind CSS, a Laravel API, and Vimeo, I rebuilt an interactive course view to be smarter, include course tests, and be more intuitive in guiding users to complete their courses.`,
       },
       {
         key: 'form-engine',
         body: `Created a dynamic React form engine to allow frontend engineers to pull form structures and save form data in a consistent manner.`,
       },
-      {
-        key: 'new-product',
-        body: (<>Built and managed a serverless MVP job board product with over 9 search filters using React, Mobx, Tailwind CSS, Node.js, Algolia and Mapbox to validate market fit and data. <StyledLink href="#talent">View Project</StyledLink></>),
-      },
-      {
-        key: 'notification',
-        body: `Built complex notification features and preferences across Laravel micro services using AWS SNS and SQS for large data sets to alert users of course activities or updates.`,
-      },
+     
       {
         key: 'both-ends',
-        body: `Released and work on both Laravel backend and React frontend features which allowed teammates to focus on other tasks.`,
+        body: `Released and worked on both Laravel backend and React frontend features, allowing teammates to focus on other tasks.`,
       },
     ],
   },
@@ -75,14 +76,13 @@ export const experience: ExpType[] = [
         key: 'developed',
         body: (
           <>
-            Developed a Laravel based CMS and event management system with Paypal’s payment API according to exceedingly strict guidelines within 6 months while working remotely. <StyledLink href="#APSCA-CMS">View Project</StyledLink>
+            Developed a Laravel-based CMS and event management system with Paypal’s payment API under strict guidelines and deadlines. <StyledLink href="#APSCA-CMS">View Project</StyledLink>
           </>
         ),
       },
       {
         key: 'managed',
-        body: `Managed production of the company’s website that deals
-        with members such as Sony, Visa, Toshiba and more.`,
+        body: `Managed production of the company’s website that deals with members such as Sony, Visa, Toshiba, and more.`,
       },
       {
         key: 'super',
@@ -92,12 +92,11 @@ export const experience: ExpType[] = [
       },
       {
         key: 'revamp',
-        body: `Revamped the current website to be responsive and improve server maintenance to
-        reduce server cost by 95%.`,
+        body: `Worked in Linux environments and improved server maintenance to reduce server costs by 95%.`,
       },
       {
         key: 'database',
-        body: `Managed a MySQL database and executed SQL statements to
+        body: `Managed a MySQL database and executed SQL queries to
         collect and analyze data for improved performance.`,
       },
     ],
@@ -114,9 +113,7 @@ export const experience: ExpType[] = [
     points: [
       {
         key: 'built',
-        body: (<>Built a PHP based registration system with Paypal’s payment API that got passed the
-          limitations of online solutions such as registration validation and payment flow
-          requirements. <StyledLink href="#ID4">View Project</StyledLink></>),
+        body: (<>Built a PHP-based registration system with Paypal’s payment API that surpassed the limitations of online solutions such as registration validation and payment flow requirements. <StyledLink href="#ID4">View Project</StyledLink></>),
       },
       {
         key: 'main',
@@ -124,16 +121,15 @@ export const experience: ExpType[] = [
       },
       {
         key: 'constructed',
-        body: `Constructed and managed International Identity Day website using HTML, SASS, Bootstrap, Git and Javascript.`,
-      },
-      {
-        key: 'success',
-        body: `Successfully worked in a remote development environment with a diverse team.`,
+        body: `Constructed and managed the International Identity Day website using HTML, SASS, Bootstrap, Git, and Javascript.`,
       },
       {
         key: 'executed',
-        body: `Executed Linux commands to configure a LAMP environment for the best
-        performance and security.`,
+        body: `Executed Linux commands to configure a LAMP environment for improved performance and security.`,
+      },
+       {
+        key: 'success',
+        body: `Successfully worked in a remote development environment with a diverse team.`,
       },
     ],
   },
@@ -171,10 +167,10 @@ type ModalContentType = {
 export const projects: ProjectType[] = [
   {
     id: 'talent',
-    name: 'Cybrary MVP Talent',
+    name: 'Cybrary Talent MVP',
     image: 'https://portfolio.us-east-1.linodeobjects.com/talent-profile.jpeg',
     technologies: ['React', 'React Select', 'Tailwind CSS', 'Serverless framework', 'Laravel', 'Node.js', 'Algolia'],
-    description: `Built and managed a mvp job board product with the goal to validate market fit and connect managers and recruiters to job seekers that are training on Cybrary. I handled the React frontend along with the design and worked with 1 product manager and 1 senior engineer for the serverless node.js backend. I built many components using Tailwind CSS and iterated on multiple designs while reviewing node.js backend code.`,
+    description: `Built and managed an MVP with the goal to connect managers and recruiters to Cybrary-trained job seekers. I handled the React frontend along with the design and worked with a product manager and a senior engineer for the serverless Node.js backend. I built many components using Tailwind CSS and iterated on multiple designs while reviewing the Node.js backend code.`,
     link: '',
     linkText: 'View React Pages I designed and built.',
     hasModal: true,
@@ -199,7 +195,7 @@ export const projects: ProjectType[] = [
           name: 'Onboarding Multi Step Form | Version 2',
           image: 'https://portfolio.us-east-1.linodeobjects.com/onbaording-pref-progress-v2-min.png',
           technologies: ['React Select', 'Google maps API'],
-          description: 'Updated the progress bar, added progress completion, and added up next step in the form.'
+          description: 'Updated the progress bar, added progress completion, and added the "next" step in the form.'
         },
         {
           id: 'final-onboarding-personal',
@@ -230,7 +226,7 @@ export const projects: ProjectType[] = [
           id: 'profile-v3',
           name: 'Talent Profile | Version 3',
           image: 'https://portfolio.us-east-1.linodeobjects.com/talent-profile-v3.png',
-          description: "Added certified skills with golden badges, display courses the user has completed and display certificates of completion."
+          description: "Added certified skills with golden badges, displayed courses the user had completed and displayed certificates of completion."
         },
         {
           id: 'final-profile',
@@ -279,8 +275,7 @@ export const projects: ProjectType[] = [
     name: 'ID4Africa Registration System',
     image: 'https://portfolio.us-east-1.linodeobjects.com/id4africa-registration.png',
     technologies: ['Laravel', 'Javascript', 'MySQL', 'Git', 'LAMP'],
-    description: `Custom registration system built to get over the limitations
-    offered by online solutions.`,
+    description: `Custom registration system built to address the limitations of online solutions.`,
     link: 'https://id4africa.com/',
     linkText: 'Company Site',
   },
@@ -289,7 +284,7 @@ export const projects: ProjectType[] = [
     name: 'An Eye for UI Design',
     image: 'https://fxt-assets.us-east-1.linodeobjects.com/herov2.png',
     technologies: ['Next.js', 'Tailwind CSS', 'UI Design', 'Styled-components', 'Codesandbox'],
-    description: `This is a collection UI designs built for projects, prototyping or just for design practice.`,
+    description: `This is a collection of UI designs built for projects, prototyping or just for design practice.`,
     link: '',
     linkText: 'View Multiple Designs',
     hasModal: true,
@@ -376,7 +371,7 @@ export const projects: ProjectType[] = [
           name: 'Freshly - A Book Store',
           image: 'https://portfolio.us-east-1.linodeobjects.com/freshly.png',
           technologies: ['Next.js', 'Tailwind CSS', 'New York Times Book API', 'Vercel'],
-          description: 'A book store that uses the New York Times Books API to fetches book data and display them to visitors. This site was built to test run Next.js with an API.',
+          description: 'This site uses Next.js with the NY Times Books API to display book data for visitors.',
           link: 'https://freshly-tjgore.vercel.app/',
           linkText: 'Live Demo',
         },
@@ -513,23 +508,28 @@ export type FaqType = {
 export const faqs: FaqType[] = [
   {
     id: 'years',
-    question: 'How many years of experience do you have in software development?',
-    answer: 'over 7 years.',
+    question: 'How many years of professional experience do you have in software development?',
+    answer: 'Over 7 years.',
   },
   {
     id: 'tech',
-    question: 'What technologies are you best at?',
+    question: 'What technologies are you most proficient at? This does not include all  the tech I have used.',
     answer: 'React, Typescript, Next.js, Laravel, Docker, Git, MySQL, REST API, Micro services.',
-  },
-  {
-    id: 'remote',
-    question: 'Which do you prefer, in office or remote?',
-    answer: `I'm currently looking for remote positions but if I find something interesting, I would consider being in office.`,
   },
   {
     id: 'movie',
     question: "What's your favorite series and movie?",
     answer: `Movie: Avengers Endgame part 1 and 2 Series: Money Heist.`,
+  },
+  {
+    id: 'strength-weakness',
+    question: "What are your strengths and weaknesses?",
+    answer: (<>Strengths: I'm a continuous learner and very flexible. <br/> Weakness: I'm introverted so hyper-social settings tend to drain me. <br/> Fun fact: I once was a  pretty good tour guide who gave presentations to groups of up to 50 people on a daily basis.</>),
+  },
+  {
+    id: 'hobbies',
+    question: "What are your hobbies?",
+    answer: `Designing, reading, and recently started running.`,
   },
   {
     id: 'quote',
@@ -539,5 +539,10 @@ export const faqs: FaqType[] = [
     Investing is risky, having children is risky, getting married is risky, going into business is risky, it’s all risky.
     
     I’ll tell how risky life is. You aren’t going to get out alive. - Jim Rohn`,
+  },
+  {
+    id: 'remote',
+    question: 'Which do you prefer, in office or remote?',
+    answer: `I'm currently looking for remote positions but if I find something compelling enough, I would consider being in the office.`,
   },
 ];

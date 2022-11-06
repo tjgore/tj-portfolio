@@ -76,8 +76,8 @@ export default function Home() {
             Motivated Problem Solver
           </h1>
           <div className="mb-24 pt-6 text-center text-2xl font-medium text-slate-300 md:text-3xl">
-            <p>I&apos;m TJ Gore, a Full-stack developer based in Baltimore.</p>
-            <p>I love Creating Clean Useful Applications for the Digital World.</p>
+            <p>I&apos;m TJ Gore, a full-stack developer based in Baltimore.</p>
+            <p>I love creating clean and useful applications for the digital world.</p>
           </div>
           <div className="flex flex-col px-0 md:px-24">
             <div className="mb-6 flex">
@@ -123,20 +123,21 @@ export default function Home() {
           <h2 className="mb-10 -translate-y-6 text-center text-4xl font-black capitalize text-slate-300 sm:text-5xl md:text-5xl">More About Me</h2>
 
           <div className="mx-auto grid max-w-4xl gap-y-4 text-lg text-slate-400">
-            <p>I was born and raised on the beautiful island of Antigua, spent 5 years in China studying and working and now here in the USA for the last 3.5 years.</p>
-            <p>I&apos;m a Full-stack Developer with over 7 years of experience and I really love building for the web.</p>
-            <p>My first real world software was a small Java application used to speed up my workflow while I was working at CIBC First Caribbean International Bank.</p>
+            <p>I was born and raised on the beautiful island of Antigua. I spent five years in China studying and working and have been living in the USA for the last three and a half years now.</p>
+            <p>I&apos;m a full-stack developer with over 7 years of experience and I am passionate about web development.</p>
+            <p>My first real world software was a small Java application used to speed up my workflow while working at CIBC First Caribbean International Bank.</p>
             <p>
-              From there, I continued to push my limits and went on to freelancing for multiple clients and working at a few awesome startups. Check out my{' '}
+              From there, I continued to push my limits and moved on to freelancing for multiple clients and working at a few awesome startups. Check out my
               <StyledLink href="#exp">work history</StyledLink>.
             </p>
             <p>
-              I&apos;m hard working and love working on projects, big or small, especially when they push me to my limits. That&apos;s when the adrenaline gets going and the fun
+              I&apos;m hard working and love working on projects, big or small, especially when they push me to my limits. That&apos;s when adrenaline kicks in and the fun
               begins.
             </p>
             <p>
-              Take a look at <StyledLink href="#projects">projects</StyledLink> I&apos;ve built!
+              Take a look at the <StyledLink href="#projects">projects</StyledLink> I&apos;ve built!
             </p>
+            <p>Read more about me in the <StyledLink href="#faq">FAQs</StyledLink>.</p>
           </div>
         </section>
 
