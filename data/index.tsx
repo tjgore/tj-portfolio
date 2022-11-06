@@ -1,4 +1,4 @@
-import StyledLink from "../components/StyledLink";
+import StyledLink from '../components/StyledLink';
 
 export type ExpType = {
   id: string;
@@ -21,17 +21,22 @@ export const experience: ExpType[] = [
     id: 'Cyb',
     position: 'Senior Software Engineer',
     duration: 'Mar 2019 - May 2022',
-    years: '3 years 3 months',
+    years: '3 years 4 months',
     company: 'Cybrary',
     companyImage: 'https://portfolio.us-east-1.linodeobjects.com/cybrary-logo.png',
     location: 'College Park, Maryland',
     technologies: ['Laravel', 'React', 'Tailwind CSS', 'Semantic UI React', 'PostgreSQL', 'Git', 'AWS S3', 'AWS SQS', 'AWS SNS', 'Algolia', 'Contentful'],
     points: [
-       {
+      {
         key: 'new-product',
-        body: (<>Built and managed a serverless job board product with over nine search filters using React, Mobx, Tailwind CSS, Node.js, Algolia, and Mapbox to validate market fit. <StyledLink href="#talent">View Project</StyledLink></>),
+        body: (
+          <>
+            Built and managed a serverless job board product with over nine search filters using React, Mobx, Tailwind CSS, Node.js, Algolia, and Mapbox to validate market fit.{' '}
+            <StyledLink href="#talent">View Project</StyledLink>
+          </>
+        ),
       },
-       {
+      {
         key: 'notification',
         body: `Built notification features and preferences across Laravel microservices using AWS SNS and SQS to alert users of course activities.`,
       },
@@ -55,7 +60,10 @@ export const experience: ExpType[] = [
         key: 'form-engine',
         body: `Created a dynamic React form engine to allow frontend engineers to pull form structures and save form data in a consistent manner.`,
       },
-     
+      {
+        key: 'mentor',
+        body: 'Worked with junior front-end engineers to help them learn how to use Laravel and other back-end technologies',
+      },
       {
         key: 'both-ends',
         body: `Released and worked on both Laravel backend and React frontend features, allowing teammates to focus on other tasks.`,
@@ -64,9 +72,9 @@ export const experience: ExpType[] = [
   },
   {
     id: 'Full-APSCA',
-    position: 'Full-stack Developer (Remote)',
+    position: 'Remote Full-stack Engineer',
     duration: 'Aug 2016 - Aug 2022',
-    years: '6 years',
+    years: '5 years 8 months',
     company: 'APSCA',
     companyImage: 'https://portfolio.us-east-1.linodeobjects.com/apsca-logo.png',
     location: 'Shanghai, China',
@@ -76,7 +84,8 @@ export const experience: ExpType[] = [
         key: 'developed',
         body: (
           <>
-            Developed a Laravel-based CMS and event management system with Paypal’s payment API under strict guidelines and deadlines. <StyledLink href="#APSCA-CMS">View Project</StyledLink>
+            Developed a Laravel-based CMS and event management system with Paypal’s payment API under strict guidelines and deadlines.{' '}
+            <StyledLink href="#APSCA-CMS">View Project</StyledLink>
           </>
         ),
       },
@@ -104,8 +113,8 @@ export const experience: ExpType[] = [
   {
     id: 'ID4',
     position: 'Full-stack PHP Developer Contract',
-    duration: 'Aug 2017 - Feb 2019',
-    years: '1 year 7 months',
+    duration: 'Aug 2017 - 2019',
+    years: '2 years',
     company: 'ID4Africa',
     companyImage: 'https://portfolio.us-east-1.linodeobjects.com/id4africa-logo.png',
     location: 'New York',
@@ -113,7 +122,12 @@ export const experience: ExpType[] = [
     points: [
       {
         key: 'built',
-        body: (<>Built a PHP-based registration system with Paypal’s payment API that surpassed the limitations of online solutions such as registration validation and payment flow requirements. <StyledLink href="#ID4">View Project</StyledLink></>),
+        body: (
+          <>
+            Built a PHP-based registration system with Paypal’s payment API that surpassed the limitations of online solutions such as registration validation and payment flow
+            requirements. <StyledLink href="#ID4">View Project</StyledLink>
+          </>
+        ),
       },
       {
         key: 'main',
@@ -127,9 +141,29 @@ export const experience: ExpType[] = [
         key: 'executed',
         body: `Executed Linux commands to configure a LAMP environment for improved performance and security.`,
       },
-       {
+      {
         key: 'success',
         body: `Successfully worked in a remote development environment with a diverse team.`,
+      },
+    ],
+  },
+  {
+    id: 'cibc-fcib',
+    position: 'Transaction Processor',
+    duration: 'April 2012 - June 2013',
+    years: '1 year 3 months',
+    company: 'CIBC FirstCaribbean International Bank',
+    companyImage: '',
+    location: 'Antigua',
+    technologies: ['Java'],
+    points: [
+      {
+        key: 'java-desktop',
+        body: `Built a Java desktop application to speed up workflow with organizing files which was adapted throughout my department for four years.`,
+      },
+      {
+        key: 'transaction',
+        body: `Accurately processed 700+ transactions per week to meet multiple hourly deadlines on a daily basis.`,
       },
     ],
   },
@@ -176,64 +210,67 @@ export const projects: ProjectType[] = [
     hasModal: true,
     modalContent: {
       title: 'Road To Talent MVP',
-      description: 'The Cybrary Talent app is a stand alone service that allowed users to opt into the talent program. The program connected users of the platform to managers and recruiters looking to hire new talent. Below is a collection of all the design and feature iterations that lead up to the final product.',
+      description:
+        'The Cybrary Talent app is a stand alone service that allowed users to opt into the talent program. The program connected users of the platform to managers and recruiters looking to hire new talent. Below is a collection of all the design and feature iterations that lead up to the final product.',
       items: [
         {
           id: 'onboarding-personal-v1',
           name: 'Onboarding Multi Step Form - Personal Step 1 | Version 1',
           image: 'https://portfolio.us-east-1.linodeobjects.com/onboarding-personal-v1-min.png',
-          description: 'This form pulled existing user data from a Laravel microservice and merged it with data the user submits.'
+          description: 'This form pulled existing user data from a Laravel microservice and merged it with data the user submits.',
         },
         {
           id: 'onboarding-preferences-v1',
           name: 'Onboarding Multi Step Form - Preferences Step 2 | Version 1',
           image: 'https://portfolio.us-east-1.linodeobjects.com/onboarding-preferences-v1-min.png',
-          description: 'The preferences form works similar to the previous form.'
+          description: 'The preferences form works similar to the previous form.',
         },
         {
           id: 'onboarding-progressbar-v1',
           name: 'Onboarding Multi Step Form | Version 2',
           image: 'https://portfolio.us-east-1.linodeobjects.com/onbaording-pref-progress-v2-min.png',
           technologies: ['React Select', 'Google maps API'],
-          description: 'Updated the progress bar, added progress completion, and added the "next" step in the form.'
+          description: 'Updated the progress bar, added progress completion, and added the "next" step in the form.',
         },
         {
           id: 'final-onboarding-personal',
           name: 'Onboarding Multi Step Form - Personal Step 1 | Final Version',
           image: 'https://portfolio.us-east-1.linodeobjects.com/final-onboarding-personal-min.png',
           technologies: ['React Select', 'react-phone-number-input', 'Mapbox API'],
-          description: 'Updated the navbar design to match the course platform, added more form fields to collect more data and updated the multi step form progress bar. The address form fields were also updated to use Mapbox instead of Google maps.'
+          description:
+            'Updated the navbar design to match the course platform, added more form fields to collect more data and updated the multi step form progress bar. The address form fields were also updated to use Mapbox instead of Google maps.',
         },
         {
           id: 'final-onboarding-preferences',
           name: 'Onboarding Multi Step Form - Preferences Step 2 | Final Version',
           image: 'https://portfolio.us-east-1.linodeobjects.com/final-onboarding-preference-min.png',
-          description: 'Updated preferences form fields and allow users to add multiple addresses with Mapbox and React Select.'
+          description: 'Updated preferences form fields and allow users to add multiple addresses with Mapbox and React Select.',
         },
         {
           id: 'profile-v1',
           name: 'Talent Profile | Version 1',
           image: 'https://portfolio.us-east-1.linodeobjects.com/talent-profile-v1-min.png',
-          description: "Collected and displayed user's personal info, job preferences, and skills."
+          description: "Collected and displayed user's personal info, job preferences, and skills.",
         },
         {
           id: 'profile-v2',
           name: 'Talent Profile | Version 2',
           image: 'https://portfolio.us-east-1.linodeobjects.com/talent-profile-v2-min.png',
-          description: "Added user's work experience and education."
+          description: "Added user's work experience and education.",
         },
         {
           id: 'profile-v3',
           name: 'Talent Profile | Version 3',
           image: 'https://portfolio.us-east-1.linodeobjects.com/talent-profile-v3.png',
-          description: "Added certified skills with golden badges, displayed courses the user had completed and displayed certificates of completion."
+          description: 'Added certified skills with golden badges, displayed courses the user had completed and displayed certificates of completion.',
         },
         {
           id: 'final-profile',
           name: 'Talent Profile | Final Version',
           image: 'https://portfolio.us-east-1.linodeobjects.com/final-talent-profile-min.png',
           technologies: ['React Select', 'react-phone-number-input', 'react-datepicker', 'Mapbox API'],
-          description: 'This is the final profile design. The screenshot above shows the edit state for the personal info, an empty state for the certification section, some ads promoting the main training platform, and a smart progress bar to show profile completion. Also for usability and support, intercom and a scroll to top button was added to the bottom right of the page.'
+          description:
+            'This is the final profile design. The screenshot above shows the edit state for the personal info, an empty state for the certification section, some ads promoting the main training platform, and a smart progress bar to show profile completion. Also for usability and support, intercom and a scroll to top button was added to the bottom right of the page.',
         },
         {
           id: 'board-prototype',
@@ -250,13 +287,15 @@ export const projects: ProjectType[] = [
           name: 'Talent Job Board | Final Version',
           image: 'https://portfolio.us-east-1.linodeobjects.com/talent-search.png',
           technologies: ['Algolia'],
-          description: 'The final version for the talent job board with search filters, favorites tab, contacted candidates tab, sorting options and saved search results. Algolia is used to handle the complex search. This screen shows how recruiters and manager can search, view, favorite and contact candidates.'
+          description:
+            'The final version for the talent job board with search filters, favorites tab, contacted candidates tab, sorting options and saved search results. Algolia is used to handle the complex search. This screen shows how recruiters and manager can search, view, favorite and contact candidates.',
         },
         {
           id: 'save-search',
           name: 'Talent Job Board Save Search',
           image: 'https://portfolio.us-east-1.linodeobjects.com/save-search-filter-min.png',
-          description: 'The above screenshot shows how saved search works. On saving a group of search filters, you can give the search a name. You can also select or update from a list of already saved search filters. All data is sent to a serverless node.js backend for processing.'
+          description:
+            'The above screenshot shows how saved search works. On saving a group of search filters, you can give the search a name. You can also select or update from a list of already saved search filters. All data is sent to a serverless node.js backend for processing.',
         },
       ],
     },
@@ -523,12 +562,17 @@ export const faqs: FaqType[] = [
   },
   {
     id: 'strength-weakness',
-    question: "What are your strengths and weaknesses?",
-    answer: (<>Strengths: I'm a continuous learner and very flexible. <br/> Weakness: I'm introverted so hyper-social settings tend to drain me. <br/> Fun fact: I once was a  pretty good tour guide who gave presentations to groups of up to 50 people on a daily basis.</>),
+    question: 'What are your strengths and weaknesses?',
+    answer: (
+      <>
+        Strengths: I'm a continuous learner and very flexible. <br /> Weakness: I'm introverted so hyper-social settings tend to drain me. <br /> Fun fact: I once was a pretty good
+        tour guide who gave presentations to groups of up to 50 people on a daily basis.
+      </>
+    ),
   },
   {
     id: 'hobbies',
-    question: "What are your hobbies?",
+    question: 'What are your hobbies?',
     answer: `Designing, reading, and recently started running.`,
   },
   {

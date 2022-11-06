@@ -6,7 +6,7 @@ const Experience = ({ experience }: { experience: ExpType }) => {
   return (
     <div className="relative mb-24 flex flex-col pl-4">
       <div className="absolute -left-[42px] h-8 w-8 overflow-hidden rounded-full">
-        <Image src={companyImage} alt={company} height="20" width="20" className="bg-slate-300 rounded-full h-10 w-10 text-center" />
+        {companyImage ? <Image src={companyImage} alt={company} height="20" width="20" className="bg-slate-300 rounded-full h-10 w-10 text-center" /> : <div className="h-10 w-10 rounded-full bg-slate-300" />}
       </div>
       <div className="flex flex-col md:flex-row md:items-center">
         <h3 className="mb-2 text-2xl font-bold tracking-wide text-slate-200">{position}</h3>
