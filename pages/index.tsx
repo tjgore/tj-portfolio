@@ -323,6 +323,7 @@ export default function Home() {
         <footer className="flex flex-col items-center justify-center px-4 pt-32 pb-10 text-slate-400">
           <p className="mb-2 text-lg font-bold">TJ W. GORE</p>
           <p className="text-center">&copy; Copyright 2022. Built with Next.js, Typescript, and Tailwind CSS.</p>
+          <p className="text-center">Privacy-friendly Analytics from <Link href="https://plausible.io/" className="hover:text-slate-300 cursor-pointer">Plausible</Link> </p>
         </footer>
       </main>
     </div>
