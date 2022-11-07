@@ -57,6 +57,10 @@ export default function Home() {
           rel="icon"
           type="image/x-icon"
           href="/favicon-32x32.png"></link>
+        <script
+          defer
+          data-domain="tjwgore.com"
+          src="https://plausible.io/js/script.js"></script>
       </Head>
 
       <main>

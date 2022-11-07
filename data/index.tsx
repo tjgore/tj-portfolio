@@ -72,7 +72,7 @@ export const experience: ExpType[] = [
   },
   {
     id: 'Full-APSCA',
-    position: 'Remote Full-stack Laravel Engineer',
+    position: 'Remote Full-Stack Laravel Engineer',
     duration: 'Aug 2016 - Mar 2022',
     years: '5 years 8 months',
     company: 'APSCA',
@@ -84,7 +84,7 @@ export const experience: ExpType[] = [
         key: 'developed',
         body: (
           <>
-            Developed a Laravel-based CMS and event management system with Paypal’s payment API under strict guidelines and deadlines.{' '}
+            Developed a Laravel-based CMS and event management system with Paypal&apos;s payment API under strict guidelines and deadlines.{' '}
             <StyledLink href="#APSCA-CMS">View Project</StyledLink>
           </>
         ),
@@ -115,7 +115,7 @@ export const experience: ExpType[] = [
   },
   {
     id: 'ID4',
-    position: 'Full-stack PHP Developer Contract',
+    position: 'Full-Stack PHP Developer Contract',
     duration: 'Aug 2017 - 2019',
     years: '2 years',
     company: 'ID4Africa',
@@ -555,8 +555,8 @@ export const faqs: FaqType[] = [
   },
   {
     id: 'tech',
-    question: 'What technologies are you most proficient at? This does not include all  the tech I have used.',
-    answer: 'React, Typescript, Next.js, Laravel, Docker, Git, MySQL, REST API, Micro services.',
+    question: 'What technologies and tools are you most proficient at? Not all of the tech I have used is listed here.',
+    answer: 'React, Typescript, Next.js, Laravel, Docker, Git, MySQL, REST API, Micro services, GitHub, Bitbucket, Contentful, Notion, Visual Studio Code, Netlify, Vercel, Postman, Algolia, Slack, Zoom, Bugsnag, Linode',
   },
   {
     id: 'movie',
@@ -568,7 +568,7 @@ export const faqs: FaqType[] = [
     question: 'What are your strengths and weaknesses?',
     answer: (
       <>
-        Strengths: I'm a continuous learner and very flexible. <br /> Weakness: I'm introverted so hyper-social settings tend to drain me. <br /> Fun fact: I once was a pretty good
+        Strengths: I&apos;m a continuous learner and very flexible. <br /> Weakness: I'm introverted so hyper-social settings tend to drain me. <br /> Fun fact: I once was a pretty good
         tour guide who gave presentations to groups of up to 50 people on a daily basis.
       </>
     ),
@@ -581,11 +581,7 @@ export const faqs: FaqType[] = [
   {
     id: 'quote',
     question: "What's your favorite quote or phrase?",
-    answer: `It’s all risky. The minute you were born it was risky. If you think trying is risky, wait until they hand you the bill for not trying.
-
-    Investing is risky, having children is risky, getting married is risky, going into business is risky, it’s all risky.
-    
-    I’ll tell how risky life is. You aren’t going to get out alive. - Jim Rohn`,
+    answer: "It’s all risky. The minute you were born it was risky. If you think trying is risky, wait until they hand you the bill for not trying. Investing is risky, having children is risky, getting married is risky, going into business is risky, it’s all risky. I’ll tell how risky life is. You aren’t going to get out alive. - Jim Rohn",
   },
   {
     id: 'remote',
