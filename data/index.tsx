@@ -31,7 +31,7 @@ export const experience: ExpType[] = [
         key: 'new-product',
         body: (
           <>
-            Built and managed a serverless job board product with over nine search filters using React, Mobx, Tailwind CSS, Node.js, Algolia, and Mapbox to validate market fit.{' '}
+            Built, managed, and designed a serverless job board app with over nine search filters using React, Mobx, Tailwind CSS, Node.js, Algolia, and Mapbox to validate market fit.{' '}
             <StyledLink href="#talent">View Project</StyledLink>
           </>
         ),
@@ -42,7 +42,7 @@ export const experience: ExpType[] = [
       },
       {
         key: 'migrate',
-        body: `Migrated and normalized large amounts of data from WordPress structured databases to a Laravel API to improve data management.`,
+        body: `Migrated and normalized large amounts of data from WordPress-structured databases to a Laravel API to improve data management.`,
       },
       {
         key: 'sql',
@@ -72,7 +72,7 @@ export const experience: ExpType[] = [
   },
   {
     id: 'Full-APSCA',
-    position: 'Remote Full-stack Engineer',
+    position: 'Remote Full-stack Laravel Engineer',
     duration: 'Aug 2016 - Mar 2022',
     years: '5 years 8 months',
     company: 'APSCA',
@@ -96,18 +96,21 @@ export const experience: ExpType[] = [
       {
         key: 'super',
         body: `Supervised ongoing maintenance and support for new
-        features with git version control while working on
-        multiple PHP projects.`,
+        features using GitHub while working on multiple PHP projects.`,
       },
       {
         key: 'revamp',
-        body: `Worked in Linux environments and improved server maintenance to reduce server costs by 95%.`,
+        body: `Worked in Linux (Ubuntu) environments and improved server maintenance to reduce server costs by 95%.`,
       },
       {
         key: 'database',
         body: `Managed a MySQL database and executed SQL queries to
         collect and analyze data for improved performance.`,
       },
+      {
+        key: 'nuxt',
+        body: 'Built a platform to reward government organizations that operate identity schemes for citizens using NuxtJs and Laravel API.'
+      }
     ],
   },
   {
