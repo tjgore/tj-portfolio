@@ -31,7 +31,7 @@ export const experience: ExpType[] = [
         key: 'new-product',
         body: (
           <>
-            Built, managed, and designed a serverless job board app with over nine search filters using React, Mobx, Tailwind CSS, Node.js, Algolia, and Mapbox to validate market fit.{' '}
+            Built, managed, and designed a serverless job board app with over nine search filters using React, Mobx, Tailwind CSS, Node.js, Laravel, Algolia, and Mapbox to validate market fit.{' '}
             <StyledLink href="#talent">View Project</StyledLink>
           </>
         ),
