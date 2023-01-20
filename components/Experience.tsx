@@ -12,7 +12,7 @@ const Experience = ({ experience }: { experience: ExpType }) => {
         <h3 className="mb-2 text-2xl font-bold tracking-wide text-slate-200">{position}</h3>
         <div className="flex flex-col sm:flex-row">
           <time className="ml-0 mb-1 text-xs uppercase tracking-wide dark:text-gray-400 md:ml-5">{duration}</time>
-          <p className="sm:ml-3 mb-1 text-xs uppercase tracking-wide dark:text-gray-400">{years}</p>
+          {years ? <p className="sm:ml-3 mb-1 text-xs uppercase tracking-wide dark:text-gray-400">{years}</p> : null}
         </div>
       </div>
 
@@ -28,7 +28,7 @@ const Experience = ({ experience }: { experience: ExpType }) => {
           </span>
         ))}
       </div>
-      <ul className="">
+      {points && points.length ? <ul className="">
         {points.map(point => (
           <li
             key={point.key}
@@ -37,7 +37,7 @@ const Experience = ({ experience }: { experience: ExpType }) => {
             <p className="text-slate-400">{point.body}</p>
           </li>
         ))}
-      </ul>
+      </ul> : null}
     </div>
   );
 };

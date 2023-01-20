@@ -4,9 +4,9 @@ export type ExpType = {
   id: string;
   position: string;
   duration: string;
-  years: string;
+  years?: string;
   company: string;
-  companyImage: string;
+  companyImage?: string;
   location: string;
   technologies: string[];
   points: {
@@ -17,6 +17,20 @@ export type ExpType = {
 
 // Experience data
 export const experience: ExpType[] = [
+  {
+    id: 'Comply',
+    position: 'Senior Software Engineer',
+    duration: 'Current',
+    company: 'ComplYant',
+    location: 'California (Remote Office)',
+    technologies: ['Laravel', 'Livewire', 'Alphine.js', 'Filament', 'Vue.js', 'Tailwind CSS', 'Vapor', 'Git', 'AWS S3'],
+    points: [
+      {
+        key: 'coming-soon',
+        body: `Brewing. Currently working on an internal admin tool to manage tax data using the TALL stack.`,
+      }
+    ],
+  },
   {
     id: 'Cyb',
     position: 'Senior Software Engineer',
@@ -556,7 +570,7 @@ export const faqs: FaqType[] = [
   {
     id: 'tech',
     question: 'What technologies and tools are you most proficient at? Not all of the tech I have used is listed here.',
-    answer: 'React, Typescript, Next.js, Laravel, Docker, Git, MySQL, REST API, Micro services, GitHub, Bitbucket, Contentful, Notion, Visual Studio Code, Netlify, Vercel, Postman, Algolia, Slack, Zoom, Bugsnag, Linode',
+    answer: 'React, Typescript, Next.js, Laravel, Livewire, Alphine, Docker, Git, MySQL, REST API, Micro services, GitHub, Bitbucket, Contentful, Notion, Visual Studio Code, Netlify, Vercel, Postman, Algolia, Slack, Zoom, Bugsnag, Linode',
   },
   {
     id: 'movie',
@@ -568,7 +582,7 @@ export const faqs: FaqType[] = [
     question: 'What are your strengths and weaknesses?',
     answer: (
       <>
-        Strengths: I&apos;m a continuous learner and very flexible. <br /> Weakness: I'm introverted so hyper-social settings tend to drain me. <br /> Fun fact: I once was a pretty good
+        Strengths: I&apos;m a continuous learner and very flexible. <br /> Weakness: I&apos;m introverted so hyper-social settings tend to drain me. <br /> Fun fact: I once was a pretty good
         tour guide who gave presentations to groups of up to 50 people on a daily basis.
       </>
     ),

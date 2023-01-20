@@ -164,8 +164,7 @@ export default function Home() {
             <p>I&apos;m a full-stack developer with over 7 years of experience and I am passionate about web development.</p>
             <p>My first real world software was a small Java application used to speed up my workflow while working at CIBC First Caribbean International Bank.</p>
             <p>
-              From there, I continued to push my limits and moved on to freelancing for multiple clients and working at a few awesome startups. Check out my
-              <StyledLink href="#exp">work history</StyledLink>.
+              From there, I continued to push my limits and moved on to freelancing for multiple clients and working at a few awesome startups. Check out my <StyledLink href="#exp">work history</StyledLink>.
             </p>
             <p>
               I&apos;m hard working and love working on projects, big or small, especially when they push me to my limits. That&apos;s when adrenaline kicks in and the fun begins.
