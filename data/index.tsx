@@ -18,20 +18,6 @@ export type ExpType = {
 // Experience data
 export const experience: ExpType[] = [
   {
-    id: 'Comply',
-    position: 'Senior Software Engineer',
-    duration: 'Current',
-    company: 'ComplYant',
-    location: 'California (Remote Office)',
-    technologies: ['Laravel', 'Livewire', 'Alphine.js', 'Filament', 'Vue.js', 'Tailwind CSS', 'Vapor', 'Git', 'AWS S3'],
-    points: [
-      {
-        key: 'coming-soon',
-        body: `Brewing. Currently working on an internal admin tool to manage tax data using the TALL stack.`,
-      }
-    ],
-  },
-  {
     id: 'Cyb',
     position: 'Senior Software Engineer',
     duration: 'Mar 2019 - May 2022',
@@ -82,6 +68,34 @@ export const experience: ExpType[] = [
         key: 'both-ends',
         body: `Released and worked on both Laravel backend and React frontend features, allowing teammates to focus on other tasks.`,
       },
+    ],
+  },
+  {
+    id: 'Comply',
+    position: 'Senior Software Engineer',
+    duration: 'Dec 2022 - Sept 2023',
+    years: '10 months',
+    company: 'ComplYant',
+    companyImage: 'https://portfolio.us-east-1.linodeobjects.com/complyant.jpg',
+    location: 'California (Remote Office)',
+    technologies: ['Laravel', 'Livewire', 'Alpine.js', 'Filament', 'Vue.js', 'Tailwind CSS', 'Vapor', 'Git', 'AWS S3'],
+    points: [
+      {
+        key: 'admin-dashboard',
+        body: `Re-built an internal admin dashboard using Laravel and Filament to increase code output and improve maintenance.`,
+      },
+      {
+        key: 'filing',
+        body: `Debugged and fixed alpine js and livewire performance issues to improve user's app experience.`,
+      },
+      {
+        key: 'design',
+        body: `Collaborated with UI/UX designers to build a UI framework based on figma designs to improve accessibility and consistence in the app.`,
+      },
+      {
+        key: 'team',
+        body: `Worked across multiple engineering teams to provide support and guidance on frontend development.`,
+      }
     ],
   },
   {
@@ -449,8 +463,8 @@ export const projects: ProjectType[] = [
     image: 'https://portfolio.us-east-1.linodeobjects.com/move-and-groove.png',
     technologies: ['Ruby on Rails', 'Heroku', 'UI Design'],
     description: `Move and Groove is an app with devise authentication to track one’s fitness habits`,
-    link: 'https://fitness-groove2.herokuapp.com/',
-    linkText: 'Project Site',
+    link: '#',
+    linkText: '',
   },
   {
     id: 'Andio',
@@ -494,6 +508,17 @@ export const reviews: ReviewType[] = [
     name: 'Mike Gruen',
     jobTitle: 'Former Engineer Director at Cybrary',
     avatar: '',
+  },
+  {
+    id: 'Derek',
+    body: (
+      <>
+        TJ has been a joy to work with. He exudes professionalism in his communication, his technical work, and his reasoning. <span className="mb-1 inline-flex rounded-lg bg-gradient-to-r from-[#FDFC47] to-[#24FE41] px-2 text-sm font-bold text-slate-900">He is highly productive and adaptable </span>, though will provide feedback if there is some way to improve a situation. In short, it has been quite a pleasure to work with him as his manager.
+      </>
+    ),
+    name: 'Derek Wiers',
+    jobTitle: 'Former Engineer Manager at Complyant',
+    avatar: 'https://portfolio.us-east-1.linodeobjects.com/derek.jpeg',
   },
   {
     id: 'Greg',
@@ -565,12 +590,12 @@ export const faqs: FaqType[] = [
   {
     id: 'years',
     question: 'How many years of professional experience do you have in software development?',
-    answer: 'Over 7 years.',
+    answer: 'Over 8 years.',
   },
   {
     id: 'tech',
     question: 'What technologies and tools are you most proficient at? Not all of the tech I have used is listed here.',
-    answer: 'React, Typescript, Next.js, Laravel, Livewire, Alphine, Docker, Git, MySQL, REST API, Micro services, GitHub, Bitbucket, Contentful, Notion, Visual Studio Code, Netlify, Vercel, Postman, Algolia, Slack, Zoom, Bugsnag, Linode',
+    answer: 'React, Typescript, Next.js, Laravel, Alpine js, Docker, Git, MySQL, REST API, Micro services, GitHub, Bitbucket, Contentful, Notion, Visual Studio Code, Netlify, Vercel, Postman, Algolia, Slack, Zoom, Bugsnag, Linode',
   },
   {
     id: 'movie',
@@ -590,7 +615,7 @@ export const faqs: FaqType[] = [
   {
     id: 'hobbies',
     question: 'What are your hobbies?',
-    answer: `Designing, reading, and recently started running.`,
+    answer: `Designing, reading, searching for new tech, and recently started running.`,
   },
   {
     id: 'quote',
