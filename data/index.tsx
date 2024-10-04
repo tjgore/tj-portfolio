@@ -18,6 +18,74 @@ export type ExpType = {
 // Experience data
 export const experience: ExpType[] = [
   {
+    id: 'Chowly',
+    position: 'Senior Software Engineer',
+    duration: 'Oct 2023 - Present',
+    years: '+1 year',
+    company: 'Chowly',
+    companyImage: 'https://portfolio.us-east-1.linodeobjects.com/chowly-favicon-300x300.jpg',
+    location: 'Chicago (Remote Office)',
+    technologies: ['Ruby on Rails API', 'Laravel API', 'React', 'Next.js', 'Redux', 'Redux Saga', 'React Query', 'Jest', 'Styled Components'],
+    points: [
+      {
+        key: 'chowly-upgrade-next',
+        body: `Led project to upgrade Next.js from version 12 to 14, fix major type errors, and fix the testing suite to improve the platform's reliability.`,
+      },
+      {
+        key: 'chowly-slow-response',
+        body: `Improved multi-tenant app performance issues using Next.js SSR, React Query caching functionality, and Redux.`,
+      },
+      {
+        key: 'chowly-promo-codes',
+        body: `Integrated Square's promo codes into a React app and Laravel API using TDD`,
+      },
+      {
+        key: 'chowly-brand-order-lifecycle',
+        body: `Debugged and fixed multiple React and Laravel hidden bugs to improve the customers' order lifecycle for multiple brands.`,
+      },
+      {
+        key: 'chowly-queue-bottleneck',
+        body: `Discovered and improved slow database queries to remove queued jobs bottleneck for syncing multiple store locations data.`,
+      },
+    ],
+  },
+  {
+    id: 'Tighten',
+    position: 'Contract Senior Software Engineer',
+    duration: 'Oct 2023 - Oct 2024',
+    years: '1 year',
+    company: 'Tighten',
+    companyImage: 'https://portfolio.us-east-1.linodeobjects.com/tighten-small-logo.jpeg',
+    location: 'Chicago (Remote Office)',
+    technologies: ['Laravel', 'PHPUnit', 'Livewire', 'Alpine.js', 'Filament', 'Algolia', 'Laravel Forge'],
+    points: [
+      {
+        key: 'tighten-dashboard-ui',
+        body: `Using Laravel and Alpine.js, I built an accessible dashboard UI to display all teams' progress and user assignments on a platform that caters to people with disabilities.`,
+      },
+      {
+        key: 'tighten-legacy-php',
+        body: `Studied and migrated a legacy php app and database to Laravel and a structured database to improve maintenance and readability.`,
+      },
+      {
+        key: 'tighten-team-document',
+        body: `Using Laravel and Livewire, I created a private teams document library to allow users to manage documents within the app.`,
+      },
+      {
+        key: 'tighten-algolia',
+        body: `Improved the site's search functionality of all resources by integrating Algolia to improve the user's accessibility.`,
+      },
+      {
+        key: 'tighten-testing',
+        body: `Built integrated tests for new features and bug fixes.`,
+      },
+      {
+        key: 'tighten-filament',
+        body: `Built and tested Filament CRUD resources to improve the internal teams' data access control.`,
+      },
+    ],
+  },
+  {
     id: 'Cyb',
     position: 'Senior Software Engineer',
     duration: 'Mar 2019 - May 2022',
@@ -31,8 +99,8 @@ export const experience: ExpType[] = [
         key: 'new-product',
         body: (
           <>
-            Built, managed, and designed a serverless job board app with over nine search filters using React, Mobx, Tailwind CSS, Node.js, Laravel, Algolia, and Mapbox to validate market fit.{' '}
-            <StyledLink href="#talent">View Project</StyledLink>
+            Built, managed, and designed a serverless job board app with over nine search filters using React, Mobx, Tailwind CSS, Node.js, Laravel, Algolia, and Mapbox to validate
+            market fit. <StyledLink href="#talent">View Project</StyledLink>
           </>
         ),
       },
@@ -73,8 +141,8 @@ export const experience: ExpType[] = [
   {
     id: 'Comply',
     position: 'Senior Software Engineer',
-    duration: 'Dec 2022 - Sept 2023',
-    years: '10 months',
+    duration: 'Dec 2022 - Oct 2023',
+    years: '11 months',
     company: 'ComplYant',
     companyImage: 'https://portfolio.us-east-1.linodeobjects.com/complyant.jpg',
     location: 'California (Remote Office)',
@@ -95,7 +163,7 @@ export const experience: ExpType[] = [
       {
         key: 'team',
         body: `Worked across multiple engineering teams to provide support and guidance on frontend development.`,
-      }
+      },
     ],
   },
   {
@@ -137,8 +205,8 @@ export const experience: ExpType[] = [
       },
       {
         key: 'nuxt',
-        body: 'Built a platform to reward government organizations that operate identity schemes for citizens using NuxtJs and Laravel API.'
-      }
+        body: 'Built a platform to reward government organizations that operate identity schemes for citizens using NuxtJs and Laravel API.',
+      },
     ],
   },
   {
@@ -513,7 +581,11 @@ export const reviews: ReviewType[] = [
     id: 'Derek',
     body: (
       <>
-        TJ has been a joy to work with. He exudes professionalism in his communication, his technical work, and his reasoning. <span className="mb-1 inline-flex rounded-lg bg-gradient-to-r from-[#FDFC47] to-[#24FE41] px-2 text-sm font-bold text-slate-900">He is highly productive and adaptable </span>, though will provide feedback if there is some way to improve a situation. In short, it has been quite a pleasure to work with him as his manager.
+        TJ has been a joy to work with. He exudes professionalism in his communication, his technical work, and his reasoning.{' '}
+        <span className="mb-1 inline-flex rounded-lg bg-gradient-to-r from-[#FDFC47] to-[#24FE41] px-2 text-sm font-bold text-slate-900">
+          He is highly productive and adaptable{' '}
+        </span>
+        , though will provide feedback if there is some way to improve a situation. In short, it has been quite a pleasure to work with him as his manager.
       </>
     ),
     name: 'Derek Wiers',
@@ -595,7 +667,8 @@ export const faqs: FaqType[] = [
   {
     id: 'tech',
     question: 'What technologies and tools are you most proficient at? Not all of the tech I have used is listed here.',
-    answer: 'React, Typescript, Next.js, Laravel, Alpine js, Docker, Git, MySQL, REST API, Micro services, GitHub, Bitbucket, Contentful, Notion, Visual Studio Code, Netlify, Vercel, Postman, Algolia, Slack, Zoom, Bugsnag, Linode',
+    answer:
+      'React, Typescript, Next.js, Laravel, Alpine js, Docker, Git, MySQL, REST API, Micro services, GitHub, Bitbucket, Contentful, Notion, Visual Studio Code, Netlify, Vercel, Postman, Algolia, Slack, Zoom, Bugsnag, Linode',
   },
   {
     id: 'movie',
@@ -607,8 +680,8 @@ export const faqs: FaqType[] = [
     question: 'What are your strengths and weaknesses?',
     answer: (
       <>
-        Strengths: I&apos;m a continuous learner and very flexible. <br /> Weakness: I&apos;m introverted so hyper-social settings tend to drain me. <br /> Fun fact: I once was a pretty good
-        tour guide who gave presentations to groups of up to 50 people on a daily basis.
+        Strengths: I&apos;m a continuous learner and very flexible. <br /> Weakness: I&apos;m introverted so hyper-social settings tend to drain me. <br /> Fun fact: I once was a
+        pretty good tour guide who gave presentations to groups of up to 50 people on a daily basis.
       </>
     ),
   },
@@ -620,7 +693,8 @@ export const faqs: FaqType[] = [
   {
     id: 'quote',
     question: "What's your favorite quote or phrase?",
-    answer: "It’s all risky. The minute you were born it was risky. If you think trying is risky, wait until they hand you the bill for not trying. Investing is risky, having children is risky, getting married is risky, going into business is risky, it’s all risky. I’ll tell how risky life is. You aren’t going to get out alive. - Jim Rohn",
+    answer:
+      'It’s all risky. The minute you were born it was risky. If you think trying is risky, wait until they hand you the bill for not trying. Investing is risky, having children is risky, getting married is risky, going into business is risky, it’s all risky. I’ll tell how risky life is. You aren’t going to get out alive. - Jim Rohn',
   },
   {
     id: 'remote',

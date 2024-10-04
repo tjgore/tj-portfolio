@@ -158,10 +158,9 @@ export default function Home() {
 
           <div className="mx-auto grid max-w-4xl gap-y-4 text-lg text-slate-400">
             <p>
-              I was born and raised on the beautiful island of Antigua. I spent five years in China studying and working and have been living in the USA for the last four and a
-              half years now.
+              I was born and raised on the beautiful island of Antigua. I spent five years in China studying and working and have been living in the USA for the last five years now.
             </p>
-            <p>I&apos;m a full-stack developer with over 8 years of experience and I am passionate about web development.</p>
+            <p>I&apos;m a full-stack developer with over 9 years of experience and I am passionate about web development.</p>
             <p>My first real world software was a small Java application used to speed up my workflow while working at CIBC First Caribbean International Bank.</p>
             <p>
               From there, I continued to push my limits and moved on to freelancing for multiple clients and working at a few awesome startups. Check out my <StyledLink href="#exp">work history</StyledLink>.
