@@ -24,7 +24,7 @@ export const experience: ExpType[] = [
     years: '+1 year',
     company: 'Chowly',
     companyImage: 'https://portfolio.us-east-1.linodeobjects.com/chowly-favicon-300x300.jpg',
-    location: 'Chicago (Remote Office)',
+    location: 'Remote Offices in Chicago',
     technologies: ['Ruby on Rails API', 'Laravel API', 'React', 'Next.js', 'Redux', 'Redux Saga', 'React Query', 'Jest', 'Styled Components'],
     points: [
       {
@@ -56,7 +56,7 @@ export const experience: ExpType[] = [
     years: '1 year',
     company: 'Tighten',
     companyImage: 'https://portfolio.us-east-1.linodeobjects.com/tighten-small-logo.jpeg',
-    location: 'Chicago (Remote Office)',
+    location: 'Remote Offices in Chicago',
     technologies: ['Laravel', 'PHPUnit', 'Livewire', 'Alpine.js', 'Filament', 'Algolia', 'Laravel Forge'],
     points: [
       {
@@ -145,7 +145,7 @@ export const experience: ExpType[] = [
     years: '11 months',
     company: 'ComplYant',
     companyImage: 'https://portfolio.us-east-1.linodeobjects.com/complyant.jpg',
-    location: 'California (Remote Office)',
+    location: 'Remote Offices in California',
     technologies: ['Laravel', 'Livewire', 'Alpine.js', 'Filament', 'Vue.js', 'Tailwind CSS', 'Vapor', 'Git', 'AWS S3'],
     points: [
       {
@@ -662,13 +662,13 @@ export const faqs: FaqType[] = [
   {
     id: 'years',
     question: 'How many years of professional experience do you have in software development?',
-    answer: 'Over 8 years.',
+    answer: 'Over 9 years.',
   },
   {
     id: 'tech',
     question: 'What technologies and tools are you most proficient at? Not all of the tech I have used is listed here.',
     answer:
-      'React, Typescript, Next.js, Laravel, Alpine js, Docker, Git, MySQL, REST API, Micro services, GitHub, Bitbucket, Contentful, Notion, Visual Studio Code, Netlify, Vercel, Postman, Algolia, Slack, Zoom, Bugsnag, Linode',
+      'React, React Hooks, Typescript, Tailwind CSS, Next.js, Laravel, Inertia.js, Livewire, Alpine js, Docker, Git, MySQL, REST API, Micro services, GitHub, Bitbucket, Notion, Visual Studio Code, Postman, Slack, Zoom, Sentry, Vercel, Linode',
   },
   {
     id: 'movie',
@@ -688,7 +688,7 @@ export const faqs: FaqType[] = [
   {
     id: 'hobbies',
     question: 'What are your hobbies?',
-    answer: `Designing, reading, searching for new tech, and recently started running.`,
+    answer: `Designing, reading, searching for and tinkering with new tech, learning about others way of thinking, and spending time with my family.`,
   },
   {
     id: 'quote',
