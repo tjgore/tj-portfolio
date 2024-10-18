@@ -37,7 +37,7 @@ export const experience: ExpType[] = [
       },
       {
         key: 'chowly-promo-codes',
-        body: `Integrated Square's promo codes into a React app and Laravel API using TDD`,
+        body: `Integrated Square's promo codes into a React app and Laravel API using TDD to provide users with requested features.`,
       },
       {
         key: 'chowly-brand-order-lifecycle',
@@ -134,8 +134,12 @@ export const experience: ExpType[] = [
       },
       {
         key: 'both-ends',
-        body: `Released and worked on both Laravel backend and React frontend features, allowing teammates to focus on other tasks.`,
+        body: `Built hundreds of React components and deployed on a daily basis to quickly deliver new features and migrate to Tailwind CSS.`,
       },
+      /*  {
+        key: 'both-ends',
+        body: `Released and worked on both Laravel backend and React frontend features, allowing teammates to focus on other tasks.`,
+      }, */
     ],
   },
   {
@@ -162,7 +166,7 @@ export const experience: ExpType[] = [
       },
       {
         key: 'team',
-        body: `Worked across multiple engineering teams to provide support and guidance on frontend development.`,
+        body: `Mentored back-end engineers on front-end concepts and tools to encourage better collaboration between teams.`,
       },
     ],
   },
